@@ -2,49 +2,128 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Eclip Soul | Şubat Sayısı</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Eclip Soul | Şubat 2026</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0b0f1a;
+      color: #e6e6e6;
+      font-family: Georgia, serif;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background: #070a12;
+      padding: 30px 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar h1 {
+      font-size: 22px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #bbb;
+      text-decoration: none;
+      margin: 15px 0;
+      letter-spacing: 2px;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      color: #fff;
+    }
+
+    .content {
+      margin-left: 280px;
+      padding: 60px;
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: 45px;
+      letter-spacing: 6px;
+      margin: 30px 0 10px;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 35px;
+      font-size: 17px;
+    }
+
+    img.cover {
+      display: block;
+      margin: 0 auto 40px;
+      max-width: 70%;
+      border: 1px solid #444;
+    }
+
+    p {
+      line-height: 1.9;
+      font-size: 19px;
+      text-align: justify;
+    }
+
+    .pdf-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      color: #e6e6e6;
+      border: 1px solid #888;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .pdf-button:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .footer {
+      margin-top: 80px;
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- SIDEBAR -->
   <div class="sidebar">
     <h1>ECLIP SOUL</h1>
-    <a href="subat.html">Şubat</a>
-    <a href="mart.html">Mart</a>
-    <a href="editors.html">Editör</a>
-    <a href="arsiv.html">Arşiv</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaaCOrIOUilUNGAkRQ4KNLosw_eYcAPIl-NnT3E8Oq-v3TRQ/viewform?usp=publish" target="_blank">Yorum Gönder</a>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="#">Mart</a>
+    <a href="#">Editör</a>
+    <a href="#">Arşiv</a>
+    <a href="#">Yorum Gönder</a>
   </div>
 
-  <!-- CONTENT -->
   <div class="content">
-    <div class="issue-tag">SAYI I — ŞUBAT 2026</div>
-
-    <h2>ECLIP SOUL</h2>
+    <h2>Eclip Soul</h2>
     <div class="subtitle">Karanlıkta kalan cümleler için</div>
 
-    <!-- KAPAK -->
-    <img class="cover" src="IMG_20260210_222112.jpg" alt="Kapak Görseli" style="max-width:400px; display:block; margin:0 auto 30px;">
-
-    <!-- YAZI -->
-    <p>
-      Eclip Soul; edebiyat, düşünce ve iç monologlar üzerine
-      kurulu bağımsız bir öğrenci dergisidir.
-    </p>
+    <img class="cover" src="subat-kapak.jpg" alt="Şubat 2026 Kapak">
 
     <p>
-      Bu dergi, söylenmeyenlerin, yarım kalan cümlelerin ve gecede
-      yankılanan soruların toplamıdır.
+      Eclip Soul; edebiyat, düşünce ve iç monologlar üzerine kurulu bağımsız bir öğrenci dergisidir.
+    </p>
+    <p>
+      Bu dergi, söylenmeyenlerin, yarım kalan cümlelerin ve gecede yankılanan soruların toplamıdır.
     </p>
 
-    <!-- PDF -->
-    <a class="pdf-link" href="subat.pdf" target="_blank">PDF İndir</a>
+    <a class="pdf-button" href="subat.pdf" target="_blank">PDF İndir</a>
 
-    <footer class="footer">
+    <div class="footer">
       © Eclip Soul Dergi
-    </footer>
+    </div>
   </div>
-
 </body>
 </html>
