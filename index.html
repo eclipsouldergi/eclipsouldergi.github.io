@@ -2,33 +2,94 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Eclipse Soul</title>
+  <title>Eclipse Soul | Sayı I</title>
   <style>
     body {
       background: #0b0f1a;
       color: #e6e6e6;
-      font-family: Georgia, serif;
-      text-align: center;
+      font-family: "Georgia", serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
       padding: 60px;
+      border-left: 3px solid #888;
+      border-right: 3px solid #888;
     }
+
+    .issue {
+      text-align: right;
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: #aaa;
+    }
+
     h1 {
-      letter-spacing: 3px;
-      font-size: 42px;
+      text-align: center;
+      letter-spacing: 6px;
+      font-size: 48px;
+      margin: 40px 0 10px;
     }
-    p {
-      max-width: 600px;
-      margin: auto;
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      color: #bbb;
+      margin-bottom: 50px;
+    }
+
+    .cover-img {
+      display: block;
+      margin: 0 auto 40px;
+      max-width: 100%;
+      border: 1px solid #444;
+    }
+
+    .content {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
+
 <body>
-  <h1>ECLIPSE THE SOUL</h1>
-  <p>
-    Bazı dergiler okunur.  
-    Bazıları hissedilir.  
-    Eclipse the Soul, karanlıkla ışığın kesiştiği yerde.
-  </p>
+  <div class="page">
+
+    <div class="issue">SAYI I — 2026</div>
+
+    <h1>ECLIPSE SOUL</h1>
+    <div class="subtitle">Karanlıkta kalan cümleler için</div>
+
+    <!-- GÖRSEL -->
+    <img class="cover-img" src="kapak.jpg" alt="Kapak Görseli">
+
+    <div class="content">
+      <p>
+        Eclipse Soul; edebiyat, düşünce, rüyalar ve iç monologlar üzerine
+        kurulu bağımsız bir öğrenci dergisidir.
+      </p>
+
+      <p>
+        Bu dergi, söylenmeyenlerin, yarım kalan cümlelerin ve gecede
+        yankılanan soruların toplamıdır.
+      </p>
+    </div>
+
+    <footer>
+      © Eclipse Soul Dergi
+    </footer>
+
+  </div>
 </body>
 </html>
