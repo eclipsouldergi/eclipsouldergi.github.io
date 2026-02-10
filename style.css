@@ -5,22 +5,21 @@ body {
   font-family: Georgia, serif;
 }
 
-/* SIDEBAR */
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 230px;
-  height: 100vh;
+  width: 320px; /* Daha geniş yapıldı */
+  height: 100%;
   background: #070a12;
   padding: 30px 20px;
   box-sizing: border-box;
 }
 
 .sidebar h1 {
-  font-size: 22px;
+  font-size: 26px; /* biraz büyütüldü */
   letter-spacing: 4px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .sidebar a {
@@ -29,108 +28,71 @@ body {
   text-decoration: none;
   margin: 15px 0;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 16px; /* biraz büyütüldü */
 }
 
 .sidebar a:hover {
   color: #fff;
 }
 
-/* CONTENT – ASIL SORUN BURADAYDI */
 .content {
-  margin-left: 230px;     /* sidebar kadar */
-  padding: 80px;          /* içeriği büyütür */
-  width: calc(100% - 230px);
-  box-sizing: border-box;
+  margin-left: 340px; /* sidebar genişliğine göre */
+  padding: 60px;
+  max-width: 900px;
 }
 
-/* ETİKET */
 .issue-tag {
-  font-size: 14px;
+  font-size: 14px; /* biraz büyütüldü */
   letter-spacing: 3px;
-  color: #aaa;
+  color: #999;
   text-align: right;
 }
 
-/* BAŞLIK */
 h2 {
-  font-size: 48px;
+  font-size: 50px; /* büyütüldü */
   letter-spacing: 6px;
-  margin: 30px 0 15px;
+  margin: 30px 0 10px;
 }
 
-/* ALT BAŞLIK */
 .subtitle {
   font-style: italic;
-  color: #bbb;
-  margin-bottom: 40px;
-  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 35px;
+  font-size: 18px; /* biraz büyütüldü */
 }
 
-/* PARAGRAF */
-p {
-  line-height: 2;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-/* MAKALE BLOĞU */
-.article {
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 1px solid #444;
-}
-
-/* KAPAK */
-.cover {
-  width: 100%;
-  max-width: 380px;   /* NET UFAK */
+.cover-img {
   display: block;
-  margin: 30px auto 45px;
+  margin: 20px auto 40px;
+  max-width: 100%;
   border: 1px solid #444;
 }
 
-/* PDF BUTONU */
-a.pdf-link {
+.description p {
+  line-height: 1.9;
+  font-size: 19px; /* biraz büyütüldü */
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.pdf-btn {
   display: inline-block;
-  margin-top: 30px;
-  padding: 12px 28px;
-  border: 1px solid #777;
+  padding: 10px 25px;
   color: #e6e6e6;
+  border: 1px solid #777;
   text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-a.pdf-link:hover {
-  background: #fff;
-  color: #000;
+.pdf-btn:hover {
+  border-color: #fff;
+  color: #fff;
 }
 
-/* FOOTER */
-.footer {
-  margin-top: 100px;
-  font-size: 14px;
-  color: #777;
+footer {
+  margin-top: 80px;
+  font-size: 13px;
+  color: #666;
   text-align: center;
 }
-
-/* MOBİL – BİLEREK BASİT */
-@media (max-width: 768px) {
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  .content {
-    margin-left: 0;
-    width: 100%;
-    padding: 40px;
-  }
-
-  .cover {
-    max-width: 300px;
-  }
-  }
