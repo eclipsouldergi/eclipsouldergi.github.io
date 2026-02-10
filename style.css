@@ -70,7 +70,7 @@ h2 {
 p {
   line-height: 1.9;
   font-size: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 /* YAZI BLOĞU (DERGİ HİSSİ) */
@@ -115,15 +115,16 @@ a.pdf-link:hover {
   }
 
   .content {
-    margin-left: 0;
-    padding: 30px;
+    margin-left: 260px;
+    padding: 60px 80px;
+    max-width: 1100px;
   }
 /* KAPAK GÖRSELİ */
 .cover {
   width: 100%;
-  max-width: 700px;
+  max-width: 450px;   /* BURASI ÖNEMLİ */
   display: block;
-  margin: 40px auto 50px;
+  margin: 30px auto 40px;
   border: 1px solid #444;
-  }
+}
 }
