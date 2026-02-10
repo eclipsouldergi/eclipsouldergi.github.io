@@ -1,3 +1,4 @@
+/* GENEL */
 body {
   margin: 0;
   background: #0b0f1a;
@@ -5,11 +6,12 @@ body {
   font-family: Georgia, serif;
 }
 
+/* SIDEBAR */
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px; /* Daha geniş yapıldı */
+  width: 300px; /* Geniş sidebar */
   height: 100%;
   background: #070a12;
   padding: 30px 20px;
@@ -17,7 +19,7 @@ body {
 }
 
 .sidebar h1 {
-  font-size: 26px; /* biraz büyütüldü */
+  font-size: 26px;
   letter-spacing: 4px;
   margin-bottom: 50px;
 }
@@ -28,28 +30,22 @@ body {
   text-decoration: none;
   margin: 15px 0;
   letter-spacing: 2px;
-  font-size: 16px; /* biraz büyütüldü */
+  font-size: 16px;
 }
 
 .sidebar a:hover {
   color: #fff;
 }
 
+/* CONTENT */
 .content {
-  margin-left: 340px; /* sidebar genişliğine göre */
+  margin-left: 320px; /* sidebar + boşluk */
   padding: 60px;
   max-width: 900px;
 }
 
-.issue-tag {
-  font-size: 14px; /* biraz büyütüldü */
-  letter-spacing: 3px;
-  color: #999;
-  text-align: right;
-}
-
 h2 {
-  font-size: 50px; /* büyütüldü */
+  font-size: 50px;
   letter-spacing: 6px;
   margin: 30px 0 10px;
 }
@@ -58,41 +54,55 @@ h2 {
   font-style: italic;
   color: #aaa;
   margin-bottom: 35px;
-  font-size: 18px; /* biraz büyütüldü */
+  font-size: 18px;
 }
 
 .cover-img {
   display: block;
-  margin: 20px auto 40px;
-  max-width: 100%;
+  margin: 0 auto 40px;
+  max-width: 70%;
   border: 1px solid #444;
 }
 
-.description p {
+p {
   line-height: 1.9;
-  font-size: 19px; /* biraz büyütüldü */
+  font-size: 19px;
   text-align: justify;
-  margin-bottom: 20px;
 }
 
-.pdf-btn {
+.pdf-button {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 10px 20px;
+  margin-top: 20px;
   color: #e6e6e6;
-  border: 1px solid #777;
+  border: 1px solid #888;
   text-decoration: none;
   font-size: 16px;
-  margin-top: 10px;
 }
 
-.pdf-btn:hover {
+.pdf-button:hover {
   border-color: #fff;
   color: #fff;
 }
 
-footer {
+.footer {
   margin-top: 80px;
   font-size: 13px;
   color: #666;
   text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 200px;
+    padding: 20px 15px;
+  }
+  .content {
+    margin-left: 220px;
+    padding: 40px 20px;
+  }
+  h2 { font-size: 38px; }
+  .subtitle { font-size: 16px; }
+  p { font-size: 17px; }
 }
