@@ -11,7 +11,7 @@ body {
   top: 0;
   left: 0;
   width: 230px;
-  height: 100%;
+  height: 100vh;
   background: #070a12;
   padding: 30px 20px;
   box-sizing: border-box;
@@ -36,55 +36,65 @@ body {
   color: #fff;
 }
 
-/* CONTENT */
+/* CONTENT – ASIL SORUN BURADAYDI */
 .content {
-  margin-left: 260px;
-  padding: 60px;
-  max-width: 900px;
+  margin-left: 230px;     /* sidebar kadar */
+  padding: 80px;          /* içeriği büyütür */
+  width: calc(100% - 230px);
+  box-sizing: border-box;
 }
 
 /* ETİKET */
 .issue-tag {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 3px;
-  color: #999;
+  color: #aaa;
   text-align: right;
 }
 
 /* BAŞLIK */
 h2 {
-  font-size: 45px;
+  font-size: 48px;
   letter-spacing: 6px;
-  margin: 30px 0 10px;
+  margin: 30px 0 15px;
 }
 
 /* ALT BAŞLIK */
 .subtitle {
   font-style: italic;
-  color: #aaa;
-  margin-bottom: 35px;
-  font-size: 17px;
+  color: #bbb;
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 
 /* PARAGRAF */
 p {
-  line-height: 1.9;
-  font-size: 19px;
-  margin-bottom: 28px;
+  line-height: 2;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
-/* YAZI BLOĞU (DERGİ HİSSİ) */
+/* MAKALE BLOĞU */
 .article {
   margin-top: 40px;
   padding-top: 30px;
   border-top: 1px solid #444;
 }
 
-/* LİNK / PDF BUTONU */
+/* KAPAK */
+.cover {
+  width: 100%;
+  max-width: 380px;   /* NET UFAK */
+  display: block;
+  margin: 30px auto 45px;
+  border: 1px solid #444;
+}
+
+/* PDF BUTONU */
 a.pdf-link {
   display: inline-block;
-  margin-top: 25px;
-  padding: 10px 20px;
+  margin-top: 30px;
+  padding: 12px 28px;
   border: 1px solid #777;
   color: #e6e6e6;
   text-decoration: none;
@@ -99,13 +109,13 @@ a.pdf-link:hover {
 
 /* FOOTER */
 .footer {
-  margin-top: 80px;
-  font-size: 13px;
-  color: #666;
+  margin-top: 100px;
+  font-size: 14px;
+  color: #777;
   text-align: center;
 }
 
-/* MOBİL (telefon için) */
+/* MOBİL – BİLEREK BASİT */
 @media (max-width: 768px) {
   .sidebar {
     position: relative;
@@ -115,16 +125,12 @@ a.pdf-link:hover {
   }
 
   .content {
-    margin-left: 260px;
-    padding: 60px 80px;
-    max-width: 1100px;
+    margin-left: 0;
+    width: 100%;
+    padding: 40px;
   }
-/* KAPAK GÖRSELİ */
-.cover {
-  width: 100%;
-  max-width: 450px;   /* BURASI ÖNEMLİ */
-  display: block;
-  margin: 30px auto 40px;
-  border: 1px solid #444;
-}
-}
+
+  .cover {
+    max-width: 300px;
+  }
+  }
