@@ -96,3 +96,46 @@ body {
   font-size: 14px;
   color: #666;
   }
+/* HERO ALANI */
+.hero {
+  text-align: center;
+}
+
+.hero-image {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 40px;
+  border: 1px solid #333;
+}
+
+.hero-text h2 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  letter-spacing: 4px;
+}
+
+.hero-text .subtitle {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #888;
+  text-decoration: none;
+  color: #e6e6e6;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #e6e6e6;
+  color: #0b0f1a;
+  }
