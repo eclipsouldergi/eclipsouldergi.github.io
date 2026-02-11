@@ -1,0 +1,98 @@
+/* GENEL */
+body {
+  margin: 0;
+  background: #0b0f1a;
+  color: #e6e6e6;
+  font-family: Georgia, serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background: #070a12;
+  padding: 40px 25px;
+  box-sizing: border-box;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+
+.sidebar a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin: 18px 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+/* ANA İÇERİK */
+.content {
+  margin-left: 260px;
+  padding: 70px;
+  max-width: 900px;
+}
+
+/* BAŞLIK */
+.content h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+/* ALT BAŞLIK */
+.subtitle {
+  font-style: italic;
+  color: #aaa;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* PARAGRAF */
+.content p {
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+/* KAPAK */
+.cover {
+  display: block;
+  margin: 40px auto;
+  max-width: 60%;
+  border: 1px solid #444;
+}
+
+/* BUTON */
+.pdf-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #777;
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+.pdf-button:hover {
+  border-color: white;
+  color: white;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  }
