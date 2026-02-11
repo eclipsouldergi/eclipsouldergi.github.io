@@ -172,4 +172,60 @@ body {
     font-size: 20px;
     padding: 16px 28px;
   }
-  }
+/* SAYILAR BÖLÜMÜ */
+.issues-section {
+  margin-top: 80px;
+}
+
+.section-title {
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.issues-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* KART */
+.issue-card {
+  background: #111522;
+  border: 1px solid #222;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.issue-card img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.issue-info h4 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.issue-info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.issue-info a {
+  text-decoration: none;
+  border: 1px solid #666;
+  padding: 10px 20px;
+  color: #e6e6e6;
+  display: inline-block;
+}
+
+.issue-info a:hover {
+  background: #e6e6e6;
+  color: #0b0f1a;
+}  
+}
