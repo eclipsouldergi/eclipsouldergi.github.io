@@ -1,4 +1,4 @@
-/* GENEL */
+/* GENEL AYARLAR */
 body {
   margin: 0;
   background: #0b0f1a;
@@ -11,15 +11,15 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px; /* Geniş sidebar */
+  width: 260px; /* biraz genişlettik */
   height: 100%;
   background: #070a12;
-  padding: 30px 20px;
+  padding: 30px 25px;
   box-sizing: border-box;
 }
 
 .sidebar h1 {
-  font-size: 26px;
+  font-size: 26px; /* büyüttük */
   letter-spacing: 4px;
   margin-bottom: 50px;
 }
@@ -28,56 +28,61 @@ body {
   display: block;
   color: #bbb;
   text-decoration: none;
-  margin: 15px 0;
+  margin: 18px 0;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 16px; /* büyüttük */
 }
 
 .sidebar a:hover {
   color: #fff;
 }
 
-/* CONTENT */
+/* İÇERİK */
 .content {
-  margin-left: 320px; /* sidebar + boşluk */
+  margin-left: 280px; /* sidebar genişliğine uyumlu */
   padding: 60px;
   max-width: 900px;
 }
 
-h2 {
-  font-size: 50px;
-  letter-spacing: 6px;
-  margin: 30px 0 10px;
+.issue-tag {
+  font-size: 14px; /* biraz büyüttük */
+  letter-spacing: 3px;
+  color: #999;
+  text-align: right;
 }
 
+/* Başlık */
+h2 {
+  font-size: 55px; /* büyüttük */
+  letter-spacing: 4px;
+  margin: 30px 0 15px;
+  text-align: left;
+}
+
+/* Altbaşlık */
 .subtitle {
   font-style: italic;
   color: #aaa;
-  margin-bottom: 35px;
-  font-size: 18px;
+  margin-bottom: 40px;
+  font-size: 20px; /* büyüttük */
 }
 
-.cover-img {
-  display: block;
-  margin: 0 auto 40px;
-  max-width: 70%;
-  border: 1px solid #444;
-}
-
+/* Paragraflar */
 p {
-  line-height: 1.9;
-  font-size: 19px;
+  line-height: 2;
+  font-size: 22px; /* büyüttük */
   text-align: justify;
 }
 
+/* PDF butonu */
 .pdf-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  color: #e6e6e6;
-  border: 1px solid #888;
-  text-decoration: none;
   font-size: 16px;
+  padding: 8px 20px;
+  border: 1px solid #555;
+  color: #e6e6e6;
+  background: none;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .pdf-button:hover {
@@ -85,24 +90,18 @@ p {
   color: #fff;
 }
 
-.footer {
-  margin-top: 80px;
-  font-size: 13px;
-  color: #666;
-  text-align: center;
+/* Kapak görseli */
+.cover-img {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  border: 1px solid #444;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .sidebar {
-    width: 200px;
-    padding: 20px 15px;
+/* Footer */
+.footer {
+  margin-top: 80px;
+  font-size: 15px; /* büyüttük */
+  color: #666;
+  text-align: center;
   }
-  .content {
-    margin-left: 220px;
-    padding: 40px 20px;
-  }
-  h2 { font-size: 38px; }
-  .subtitle { font-size: 16px; }
-  p { font-size: 17px; }
-}
