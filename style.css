@@ -12,25 +12,25 @@ body {
   top: 0;
   left: 0;
   width: 240px;
-  height: 100%;
+  height: 70%;
   background: #070a12;
   padding: 40px 25px;
   box-sizing: border-box;
 }
 
 .sidebar h1 {
-  font-size: 24px;
-  letter-spacing: 4px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  letter-spacing: 7px;
+  margin-bottom: 60px;
 }
 
 .sidebar a {
   display: block;
   color: #bbb;
   text-decoration: none;
-  margin: 18px 0;
-  font-size: 16px;
-  letter-spacing: 2px;
+  margin: 20px 0;
+  font-size: 20px;
+  letter-spacing: 5px;
 }
 
 .sidebar a:hover {
@@ -39,46 +39,46 @@ body {
 
 /* ANA İÇERİK */
 .content {
-  margin-left: 260px;
-  padding: 70px;
-  max-width: 900px;
+  margin-left: 300px;
+  padding: 90px;
+  max-width: 1000px;
 }
 
 /* BAŞLIK */
 .content h2 {
-  font-size: 42px;
-  margin-bottom: 10px;
-  letter-spacing: 3px;
+  font-size: 46px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
 }
 
 /* ALT BAŞLIK */
 .subtitle {
   font-style: italic;
   color: #aaa;
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 /* PARAGRAF */
 .content p {
-  font-size: 18px;
-  line-height: 1.9;
-  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 /* KAPAK */
 .cover {
   display: block;
-  margin: 40px auto;
-  max-width: 60%;
+  margin: 50px auto;
+  max-width: 50%;
   border: 1px solid #444;
 }
 
 /* BUTON */
 .pdf-button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 30px;
+  padding: 20px 25px;
   border: 1px solid #777;
   color: #e6e6e6;
   text-decoration: none;
@@ -91,9 +91,9 @@ body {
 
 /* FOOTER */
 .footer {
-  margin-top: 80px;
+  margin-top: 90px;
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   color: #666;
   }
 /* HERO ALANI */
@@ -109,29 +109,29 @@ body {
 }
 
 .hero-text h2 {
-  font-size: 60px;
-  margin-bottom: 15px;
-  letter-spacing: 4px;
+  font-size: 70px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
 }
 
 .hero-text .subtitle {
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 28px;
+  margin-bottom: 30px;
   color: #aaa;
 }
 
 .hero-text p {
-  font-size: 20px;
-  margin-bottom: 35px;
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .hero-button {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 18px 34px;
   border: 1px solid #888;
   text-decoration: none;
   color: #e6e6e6;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.3s ease;
 }
 
