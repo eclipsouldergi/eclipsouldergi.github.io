@@ -139,3 +139,37 @@ body {
   background: #e6e6e6;
   color: #0b0f1a;
   }
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 40px 20px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text h2 {
+    font-size: 48px;
+  }
+
+  .hero-text .subtitle {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-button {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+  }
