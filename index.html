@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Eclip Soul | Ana Sayfa</title>
   <style>
+    /* GENEL AYARLAR */
     body {
       margin: 0;
       background: #0b0f1a;
@@ -11,11 +12,12 @@
       font-family: Georgia, serif;
     }
 
+    /* SIDEBAR */
     .sidebar {
       position: fixed;
       top: 0;
       left: 0;
-      width: 300px;
+      width: 260px;
       height: 100%;
       background: #070a12;
       padding: 30px 25px;
@@ -23,26 +25,27 @@
     }
 
     .sidebar h1 {
-      font-size: 28px;
-      letter-spacing: 4px;
-      margin-bottom: 50px;
+      font-size: 24px;   /* orta boy, okunaklı */
+      letter-spacing: 3px;
+      margin-bottom: 40px;
     }
 
     .sidebar a {
       display: block;
       color: #bbb;
       text-decoration: none;
-      margin: 18px 0;
-      letter-spacing: 2px;
-      font-size: 18px;
+      margin: 15px 0;
+      letter-spacing: 1.5px;
+      font-size: 16px;  /* orta boy, okunaklı */
     }
 
     .sidebar a:hover {
       color: #fff;
     }
 
+    /* İÇERİK */
     .content {
-      margin-left: 320px;
+      margin-left: 280px;
       padding: 60px;
       max-width: 900px;
     }
@@ -67,6 +70,23 @@
       text-align: justify;
     }
 
+    /* PDF butonu */
+    .pdf-button {
+      font-size: 16px;
+      padding: 8px 20px;
+      border: 1px solid #555;
+      color: #e6e6e6;
+      background: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .pdf-button:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    /* Footer */
     .footer {
       margin-top: 80px;
       font-size: 15px;
@@ -78,16 +98,17 @@
 <body>
   <div class="sidebar">
     <h1>ECLIP SOUL</h1>
-    <a href="subat.html">Şubat</a>
+    <a href="index.html">Ana Sayfa</a>
     <a href="#">Mart</a>
     <a href="#">Editör</a>
     <a href="#">Arşiv</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaaCOrIOUilUNGAkRQ4KNLosw_eYcAPIl-NnT3E8Oq-v3TRQ/viewform?usp=publish" target="_blank">Yorum Gönder</a>
+    <a href="#">Yorum Gönder</a>
   </div>
 
   <div class="content">
     <h2>Eclip Soul</h2>
     <div class="subtitle">Karanlıkta kalan cümleler için</div>
+
     <p>
       Eclip Soul; edebiyat, düşünce ve iç monologlar üzerine kurulu bağımsız bir öğrenci dergisidir.
     </p>
