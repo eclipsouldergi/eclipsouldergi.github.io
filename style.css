@@ -4,7 +4,22 @@ body {
   color: #e6e6e6;
   font-family: Georgia, serif;
 }
+.manifesto {
+  max-width: 800px;
+  margin-bottom: 60px;
+}
 
+.manifesto h3 {
+  font-size: 40px;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
+}
+
+.manifesto p {
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
 /* SIDEBAR */
 .sidebar {
   position: fixed;
