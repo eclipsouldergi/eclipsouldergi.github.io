@@ -20,31 +20,24 @@ body{
   margin:0 auto;
   padding:40px 20px;
 }
-<div class="manifesto">
 
-<h3>DELIQUIUM</h3>
+/* MANIFESTO */
+.manifesto{
+  margin-bottom:60px;
+}
 
-<p>
-Deliquium, Latince kökenli bir kavramdır. Sözlük anlamıyla "erime, çözülme, dağılma" demektir. Ancak derinine inersek Deliquium ruhsal, zihinsel bir kırılmayı ifade eder. Yeryüzünün kırıldığı anlar da tutulma anlarıdır.
-</p>
+.manifesto h3{
+  font-size:40px;
+  letter-spacing:6px;
+  margin-bottom:30px;
+}
 
-<p>
-Hem güneş tutulması gibi fiziksel bir kararmayı hem de ruhun tanrısal bir güç karşısında eriyip gitmesini, bayılmasını ifade ediyor dergimizde.
-</p>
+.manifesto p{
+  font-size:22px;
+  line-height:1.8;
+  margin-bottom:25px;
+}
 
-<p>
-Bu sayımızda insanın taşma noktasına ve söyleyemedikleriyle baş başa kaldığı yerlere odaklanıyoruz. Aynı zamanda kabullenişin, yaşama geri dönmenin ve içsel yüzleşmelerin sesi oluyoruz.
-</p>
-
-<p>
-Her insanın içinde görünmeyen sessiz bir çatlak vardır.
-</p>
-
-<p>
-Biz o çatlağı doldurmayı, sizi tekrar yaşamın güzelliğine ikna etmeyi amaçlıyoruz.
-</p>
-
-</div>
 /* ÜST ETİKET */
 .issue{
   letter-spacing:3px;
@@ -83,7 +76,7 @@ h1{
   margin-bottom:30px;
 }
 
-/* ALINTI STİLİ */
+/* ALINTI */
 .quote{
   border-left:3px solid #555;
   padding-left:20px;
@@ -92,19 +85,28 @@ h1{
   color:#ccc;
 }
 
-/* PDF BUTON */
-.button{
-  display:inline-block;
+/* PDF ALANI */
+.pdf-container{
   margin-top:40px;
-  padding:14px 28px;
-  border:1px solid #777;
-  text-decoration:none;
-  color:#e6e6e6;
-  font-size:16px;
+  border:1px solid #333;
 }
 
-.button:hover{
-  background:#e6e6e6;
+/* FLIPBOOK */
+.flipbook-link{
+  margin-top:40px;
+  text-align:center;
+}
+
+.flipbook-link a{
+  display:inline-block;
+  padding:10px 24px;
+  border:1px solid #666;
+  text-decoration:none;
+  color:#e6e6e6;
+}
+
+.flipbook-link a:hover{
+  background:white;
   color:#0b0f1a;
 }
 
@@ -127,17 +129,38 @@ footer{
 <h1>ECLIP SOUL</h1>
 <div class="subtitle">Karanlıkta kalan cümleler için</div>
 
+<!-- MANIFESTO BURADA -->
+<div class="manifesto">
+
+<h3>DELIQUIUM</h3>
+
+<p>
+Deliquium, Latince kökenli bir kavramdır. Sözlük anlamıyla "erime, çözülme, dağılma" demektir. Ancak derinine inersek Deliquium ruhsal, zihinsel bir kırılmayı ifade eder. Yeryüzünün kırıldığı anlar da tutulma anlarıdır.
+</p>
+
+<p>
+Hem güneş tutulması gibi fiziksel bir kararmayı hem de ruhun tanrısal bir güç karşısında eriyip gitmesini, bayılmasını ifade ediyor dergimizde.
+</p>
+
+<p>
+Bu sayımızda insanın taşma noktasına ve söyleyemedikleriyle baş başa kaldığı yerlere odaklanıyoruz. Aynı zamanda kabullenişin, yaşama geri dönmenin ve içsel yüzleşmelerin sesi oluyoruz.
+</p>
+
+<p>
+Her insanın içinde görünmeyen sessiz bir çatlak vardır.
+</p>
+
+<p>
+Biz o çatlağı doldurmayı, sizi tekrar yaşamın güzelliğine ikna etmeyi amaçlıyoruz.
+</p>
+
+</div>
+
 <img src="IMG_20260210_222112.jpg" class="cover">
 
 <div class="article">
 Bu sayı; gecenin içinden geçen düşüncelerin,
 suskun kalmış cümlelerin ve yarım kalmış hikâyelerin toplamıdır.
-</div>
-
-<div class="article">
-Her yazı bir yankıdır.
-Her paragraf bir iç konuşma.
-Ve her sayfa biraz daha derine iner.
 </div>
 
 <div class="quote">
@@ -148,7 +171,18 @@ Ve her sayfa biraz daha derine iner.
 Şubat sayısında; rüyalar, kırılganlık, suskunluk ve yeniden doğuş üzerine yazılar bulacaksınız.
 </div>
 
-<a href="subat.pdf" target="_blank" class="button">PDF’i Aç</a>
+<!-- PDF GÖMÜLÜ -->
+<div class="pdf-container">
+  <iframe src="subat.pdf" width="100%" height="800px"></iframe>
+</div>
+
+<!-- FLIPBOOK LİNK -->
+<div class="flipbook-link">
+  <p>Flipbook versiyonu için:</p>
+  <a href="FLIPBOOK_LİNKİNİ_BURAYA" target="_blank">
+    Flipbook'u Aç
+  </a>
+</div>
 
 <footer>
 © Eclip Soul Dergi
@@ -157,4 +191,4 @@ Ve her sayfa biraz daha derine iner.
 </div>
 
 </body>
-  </html>
+</html>
