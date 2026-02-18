@@ -20,6 +20,30 @@ body {
   line-height: 1.8;
   margin-bottom: 25px;
 }
+.flipbook-link {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.flipbook-link p {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.flipbook-link a {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #666;
+  text-decoration: none;
+  color: #e6e6e6;
+  font-size: 16px;
+}
+
+.flipbook-link a:hover {
+  background: white;
+  color: #0b0f1a;
+}
 /* SIDEBAR */
 .sidebar {
   position: fixed;
