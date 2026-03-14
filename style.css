@@ -4,46 +4,7 @@ body {
   color: #e6e6e6;
   font-family: Georgia, serif;
 }
-.manifesto {
-  max-width: 800px;
-  margin-bottom: 60px;
-}
 
-.manifesto h3 {
-  font-size: 40px;
-  letter-spacing: 6px;
-  margin-bottom: 30px;
-}
-
-.manifesto p {
-  font-size: 22px;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
-.flipbook-link {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.flipbook-link p {
-  font-size: 18px;
-  color: #aaa;
-  margin-bottom: 15px;
-}
-
-.flipbook-link a {
-  display: inline-block;
-  padding: 10px 24px;
-  border: 1px solid #666;
-  text-decoration: none;
-  color: #e6e6e6;
-  font-size: 16px;
-}
-
-.flipbook-link a:hover {
-  background: white;
-  color: #0b0f1a;
-}
 /* SIDEBAR */
 .sidebar {
   position: fixed;
@@ -54,12 +15,16 @@ body {
   background: #070a12;
   padding: 40px 25px;
   box-sizing: border-box;
+  border-right: 1px solid #d4af37;
 }
 
 .sidebar h1 {
   font-size: 28px;
   letter-spacing: 4px;
   margin-bottom: 50px;
+  color: #d4af37;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
 }
 
 .sidebar a {
@@ -71,7 +36,38 @@ body {
 }
 
 .sidebar a:hover {
-  color: white;
+  color: #d4af37;
+}
+
+/* SİDEBAR İLETİŞİM */
+.sidebar-section {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.sidebar-section h4 {
+  color: #d4af37;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.contact-button {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #d4af37;
+  color: #0b0f1a;
 }
 
 /* CONTENT */
@@ -90,17 +86,20 @@ body {
   width: 100%;
   max-width: 500px;
   margin-bottom: 40px;
+  border: 1px solid #333;
 }
 
 .hero h2 {
   font-size: 60px;
   margin-bottom: 15px;
+  color: #d4af37;
 }
 
 .subtitle {
   font-size: 22px;
   margin-bottom: 30px;
   color: #aaa;
+  font-style: italic;
 }
 
 .hero p {
@@ -111,14 +110,16 @@ body {
 .hero-button {
   display: inline-block;
   padding: 14px 30px;
-  border: 1px solid #888;
+  border: 1px solid #d4af37;
   text-decoration: none;
-  color: #e6e6e6;
+  color: #d4af37;
   font-size: 18px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .hero-button:hover {
-  background: white;
+  background: #d4af37;
   color: #0b0f1a;
 }
 
@@ -130,9 +131,11 @@ body {
 .section-title {
   font-size: 32px;
   margin-bottom: 40px;
+  color: #d4af37;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
 }
 
-/* SAYILAR KARTLARI İYİLEŞTİRME */
 .issue-card {
   background: #111522;
   padding: 25px;
@@ -142,6 +145,7 @@ body {
   align-items: center;
   border-radius: 8px;
   transition: transform 0.2s ease;
+  margin-bottom: 20px;
 }
 
 .issue-card:hover {
@@ -152,20 +156,7 @@ body {
 .issue-card img {
   width: 100%;
   max-width: 150px;
-  margin-bottom: 0;
   border-radius: 4px;
-}
-
-/* SİDEBAR LOGO İÇİN */
-.sidebar-logo {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.sidebar-logo img {
-  max-width: 120px;
-  border-radius: 50%;
-  border: 2px solid #d4af37;
 }
 
 .issue-info h4 {
@@ -184,6 +175,8 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   color: #e6e6e6;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .issue-info a:hover {
@@ -191,27 +184,52 @@ body {
   color: #0b0f1a;
 }
 
+/* FLIPBOOK */
+.flipbook-link {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.flipbook-link p {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.flipbook-link a {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #666;
+  text-decoration: none;
+  color: #e6e6e6;
+  border-radius: 4px;
+}
+
+.flipbook-link a:hover {
+  background: white;
+  color: #0b0f1a;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
-
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
     text-align: center;
   }
-
+  
   .content {
     margin-left: 0;
     padding: 30px 20px;
   }
-
+  
   .hero h2 {
     font-size: 40px;
   }
-
-  .hero p {
-    font-size: 18px;
+  
+  .issue-card {
+    flex-direction: column;
+    text-align: center;
   }
-
 }
