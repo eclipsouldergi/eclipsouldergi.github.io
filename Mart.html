@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eclip Soul | Mart 2026</title>
+  <title>Eclip Soul | Mart 2026: Hiraeth</title>
   <style>
-    /* Buraya subat.html'deki stillerin aynısını kopyala */
+    /* Aynı stiller - değişiklik yok */
     body {
       margin: 0;
       background: #0b0f1a;
@@ -56,12 +56,30 @@
       line-height: 1.8;
       margin-bottom: 20px;
     }
-    .cover {
+    /* KAPAK OLMAYINCA KULLANILACAK SEMBOLİK ALAN */
+    .cover-placeholder {
       width: 100%;
       max-width: 500px;
-      display: block;
+      height: 300px;
       margin: 0 auto 50px auto;
-      border: 1px solid #333;
+      border: 2px dashed #d4af37;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #111522;
+      border-radius: 4px;
+    }
+    .cover-placeholder h2 {
+      font-size: 48px;
+      margin: 0;
+      color: #d4af37;
+      letter-spacing: 8px;
+    }
+    .cover-placeholder p {
+      font-size: 20px;
+      color: #aaa;
+      font-style: italic;
     }
     .article {
       font-size: 18px;
@@ -94,57 +112,72 @@
       color: #666;
       text-align: center;
     }
+    /* VURGULAMA */
+    .hiraeth-highlight {
+      color: #d4af37;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <!-- Ana Sayfaya Dönüş Linki -->
+    <!-- Ana Sayfaya Dönüş -->
     <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
 
-    <!-- ÖNEMLİ: Burayı SAYI II — MART 2026 olarak değiştir -->
+    <!-- SAYI BİLGİSİ -->
     <div class="issue">SAYI II — MART 2026</div>
 
     <h1>ECLIP SOUL</h1>
     <div class="subtitle">Karanlıkta kalan cümleler için</div>
 
-    <!-- MART AYI MANIFESTOSU - Burayı kendi metninle değiştir -->
+    <!-- MART AYI MANIFESTOSU: HIRAETH -->
     <div class="manifesto">
-      <h3>[YENİ SAYININ TEMASI]</h3>
-      <p>[Buraya manifesto metnini yaz...]</p>
-      <p>[İkinci paragraf...]</p>
-      <p>[Üçüncü paragraf...]</p>
+      <h3>HIRAETH</h3>
+      <p><span class="hiraeth-highlight">Hiraeth</span>, Galce kökenli bir kelimedir. Kesin bir karşılığı olmayan bu sözcük; özlem, hasret, nostalji ve geçmişe duyulan derin bir arzuyu ifade eder. Ancak bundan daha fazlasıdır: Eve dönme isteği, ama artık var olmayan bir eve...</p>
+      <p>Bu sayımızda <span class="hiraeth-highlight">nostalji</span> kavramını ele alıyoruz. Çocukluğun o sisli sokakları, ilk aşkın buruk tadı, eski fotoğrafların sararmış yüzleri... Hepsi birer hayalden ibaret belki ama hissettirdikleri gerçek.</p>
+      <p>Nostalji, sadece geçmişe özlem değildir; aynı zamanda şimdiki zamanla yüzleşmenin de bir yoludur. Geçmişe baktığımızda aslında kendimizin bugünkü yansımasını görürüz. Peki ya o yansıma hiç olmadığımız birine aitse?</p>
+      <p>Bu sayı; kaybettiğimiz zamanların, geri gelmeyecek anların ve belki de hiç yaşanmamış anıların sayısıdır. <span class="hiraeth-highlight">Hiraeth</span> ile...</p>
     </div>
 
-    <!-- GÖRSEL: Mart ayı kapak görselin -->
-    <img src="mart_kapak.jpg" alt="Mart 2026 Kapak Görseli" class="cover">
+    <!-- GEÇİCİ KAPAK ALANI (Kapak hazır olana kadar) -->
+    <div class="cover-placeholder">
+      <h2>HIRAETH</h2>
+      <p>Nostalji / Mart 2026</p>
+      <p style="font-size: 14px; margin-top: 30px;">(Kapak görseli hazırlanıyor...)</p>
+    </div>
 
-    <!-- MART AYI YAZISI - Burayı güncelle -->
+    <!-- MART AYI YAZISI -->
     <div class="article">
-      <p>[Yeni sayının açılış yazısı...]</p>
-      <p>[İkinci paragraf...]</p>
-      <p>[Üçüncü paragraf...]</p>
-      <p>[Dördüncü paragraf...]</p>
+      <p>Bir çocukluk fotoğrafına bakarken yakalıyoruz kendimizi. O gün giydiğimiz kazağı, o gün yediğimiz dondurmayı hatırlıyoruz belki. Ama asıl hatırladığımız, o anın içinde hissettiğimiz ama adını koyamadığımız bir şey. İşte o şey, belki de Hiraeth'in ta kendisi.</p>
+      <p>Bu sayıda; eski günlere özlem duyanların, "keşke"lerle yaşayanların ve geçmişin peşinden koşarken bugünü kaçıranların hikayelerini bulacaksınız. Ama aynı zamanda, nostaljinin bir kaçış değil, bir varoluş biçimi olduğunu fark edenlerin de...</p>
+      <p>Hiraeth, yalnızca bir özlem değil. Aynı zamanda bir arayış. Kayıp bir parçayı tamamlama çabası. Belki de bu yüzden bu kadar tanıdık geliyor bize. Çünkü hepimiz, içimizde bir yerlerde tamamlanmayı bekleyen bir yanımız olduğunu biliyoruz.</p>
+      <p>Mart sayımız; geçmişe özlemle bakan ama geleceğe umutla yürüyenler için.</p>
     </div>
 
-    <!-- PDF: Mart ayı PDF dosyan -->
+    <!-- PDF ALANI (PDF yoksa burayı yoruma al veya sil) -->
+    <!-- 
     <div class="pdf-container">
       <iframe src="mart2026.pdf" width="100%" height="800px" style="border: none;"></iframe>
       <p style="text-align: center; color: #888; font-size: 14px;">
         PDF görüntülenmiyorsa <a href="mart2026.pdf" download>buraya tıklayarak indirebilirsiniz.</a>
       </p>
     </div>
+    -->
 
     <!-- FLIPBOOK LINKİ (Varsa) -->
+    <!-- 
     <div class="flipbook-link">
       <p>Flipbook versiyonu için:</p>
       <a href="[FLIPBOOK_LINKINI_GIR]" target="_blank">Flipbook'u Aç</a>
     </div>
+    -->
 
     <footer>
-      © Eclip Soul Dergi
+      © Eclip Soul Dergi — Mart 2026: Hiraeth
     </footer>
 
   </div>
 </body>
-  </html>
+</html>
