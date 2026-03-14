@@ -13,6 +13,7 @@
     }
     .comment-name { color: #d4af37; font-weight: bold; font-size: 18px; }
     .comment-text { font-size: 16px; line-height: 1.6; color: #ccc; }
+    .comment-date { color: #666; font-size: 12px; margin-top: 10px; }
     .survey-section {
       background: #0b0f1a; border: 2px solid #d4af37; border-radius: 8px;
       padding: 30px; margin: 40px 0;
@@ -21,11 +22,60 @@
     .survey-option {
       background: #111522; border: 1px solid #333; padding: 15px;
       margin-bottom: 10px; border-radius: 4px; cursor: pointer;
+      transition: all 0.2s ease;
     }
-    .survey-option:hover { border-color: #d4af37; transform: translateX(5px); }
+    .survey-option:hover { 
+      border-color: #d4af37; 
+      background: #1a1e2a;
+      transform: translateX(5px); 
+    }
+    .survey-option.selected {
+      background: #d4af37;
+      color: #0b0f1a;
+      border-color: #d4af37;
+    }
     .survey-button {
       background: #d4af37; color: #0b0f1a; border: none;
       padding: 12px 30px; border-radius: 4px; cursor: pointer; font-weight: bold;
+      margin-top: 20px;
+      transition: all 0.2s ease;
+    }
+    .survey-button:hover {
+      background: #e6c456;
+      transform: scale(1.02);
+    }
+    .comment-input {
+      width: 100%; 
+      padding: 15px; 
+      background: #111522; 
+      border: 1px solid #333; 
+      color: white; 
+      border-radius: 4px; 
+      min-height: 100px;
+      font-family: Georgia, serif;
+      margin-bottom: 10px;
+    }
+    .comment-input:focus {
+      outline: none;
+      border-color: #d4af37;
+    }
+    .send-button {
+      background: #d4af37; 
+      color: #0b0f1a; 
+      border: none; 
+      padding: 10px 25px; 
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .send-button:hover {
+      background: #e6c456;
+    }
+    .vote-count {
+      color: #666; 
+      font-size: 14px; 
+      margin-top: 15px;
+      text-align: right;
     }
   </style>
 </head>
@@ -38,44 +88,101 @@
     <a href="yorumlar.html">Yorumlar</a>
     <div class="sidebar-section">
       <h4>✧ İLETİŞİM ✧</h4>
-      <a href="mailto:eclipsouldergi@gmail.com" class="contact-button">📧 Bize Yazın</a>
+      <a href="mailto:eclipsouldergi98@gmail.com" class="contact-button">📧 Bize Yazın</a>
     </div>
   </div>
 
   <div class="content">
     <div class="comments-container">
-      <h2 style="color: #d4af37; font-size: 36px;">YORUMLAR</h2>
+      <h2 style="color: #d4af37; font-size: 36px; margin-bottom: 40px;">YORUMLAR</h2>
       
+      <!-- ÖRNEK YORUMLAR -->
       <div class="comment-card">
         <div class="comment-name">Elif Y.</div>
-        <div class="comment-text">"Deliquium kavramı çok etkileyici. Ay tutulması mitolojileri bölümünü çok sevdim."</div>
+        <div class="comment-text">"Deliquium kavramı çok etkileyici. Ay tutulması mitolojileri bölümünü çok sevdim. Devamını bekliyoruz!"</div>
+        <div class="comment-date">14 Mart 2026</div>
       </div>
       
       <div class="comment-card">
         <div class="comment-name">Mert K.</div>
-        <div class="comment-text">"Hiraeth sayısını dört gözle bekliyorum. Nostalji teması çok iyi seçim."</div>
+        <div class="comment-text">"Hiraeth sayısını dört gözle bekliyorum. Nostalji teması şu aralar tam da ihtiyacım olan şey."</div>
+        <div class="comment-date">10 Mart 2026</div>
+      </div>
+
+      <div class="comment-card">
+        <div class="comment-name">Zeynep A.</div>
+        <div class="comment-text">"Şakayık çiçeği yazısı harikaydı. Mitolojiyle botanik nasıl bu kadar güzel birleşir ancak."</div>
+        <div class="comment-date">5 Mart 2026</div>
       </div>
       
-      <!-- ANKET -->
-      <div class="survey-section">
-        <h3 class="survey-title">✧ ANKET ✧</h3>
-        <p style="font-size: 18px; margin-bottom: 20px;">En çok hangi temayı merak ediyorsunuz?</p>
-        <div class="survey-option">🌙 Rüyalar ve Bilinçaltı</div>
-        <div class="survey-option">⚡ Mitoloji ve Tanrıçalar</div>
-        <div class="survey-option">📷 Nostalji ve Anılar</div>
-        <div class="survey-option">🌌 Felsefe ve Varoluş</div>
-        <div class="survey-option">🎭 Şiir ve Edebiyat</div>
-        <button class="survey-button">Oy Ver</button>
-        <p style="color: #666;">32 kişi oy verdi</p>
-      </div>
+      <!-- ANKET BÖLÜMÜ - RUH HALİ -->
+<div class="survey-section" style="background: linear-gradient(145deg, #0b0f1a 0%, #1a1e2a 100%);">
+  <h3 class="survey-title" style="text-align: center;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
+  
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+    
+    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer; transition: all 0.3s;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
+      <span style="font-size: 40px; display: block;">🌙</span>
+      <h4 style="margin: 10px 0;">Hüzünlü</h4>
+      <p style="font-size: 12px; color: #888;">"Ay ışığında kayboldum"</p>
+    </div>
+    
+    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
+      <span style="font-size: 40px; display: block;">☕</span>
+      <h4 style="margin: 10px 0;">Nostaljik</h4>
+      <p style="font-size: 12px; color: #888;">"Eski günlere özlem"</p>
+    </div>
+    
+    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
+      <span style="font-size: 40px; display: block;">🌌</span>
+      <h4 style="margin: 10px 0;">Felsefi</h4>
+      <p style="font-size: 12px; color: #888;">"Varoluşu sorguluyorum"</p>
+    </div>
+    
+    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
+      <span style="font-size: 40px; display: block;">⚡</span>
+      <h4 style="margin: 10px 0;">İsyankar</h4>
+      <p style="font-size: 12px; color: #888;">"Kuralları yıkmak istiyorum"</p>
+    </div>
+    
+  </div>
+  
+  <form method="post" action="mailto:eclipsouldergi98@gmail.com" enctype="text/plain" style="text-align: center; margin-top: 25px;">
+    <input type="hidden" name="ruh_hali" id="selectedMood" value="">
+    <button type="submit" class="survey-button" style="width: 100%;">✦ SEÇİMİMİ GÖNDER ✦</button>
+  </form>
+  
+  <p style="text-align: center; color: #666; font-size: 12px; margin-top: 15px;">43 kişi katıldı</p>
+</div>
       
-      <!-- YORUM GÖNDER -->
+      <!-- YORUM GÖNDERME BÖLÜMÜ -->
       <div style="margin-top: 40px;">
-        <h3 style="color: #d4af37;">Siz de yorum yapın</h3>
-        <textarea placeholder="Yorumunuz..." style="width: 100%; padding: 15px; background: #111522; border: 1px solid #333; color: white; border-radius: 4px; min-height: 100px;"></textarea>
-        <button style="background: #d4af37; color: #0b0f1a; border: none; padding: 10px 25px; margin-top: 10px; border-radius: 4px;">Gönder</button>
+        <h3 style="color: #d4af37; margin-bottom: 20px;">Siz de yorum yapın</h3>
+        <form method="post" action="mailto:eclipsouldergi98@gmail.com" enctype="text/plain">
+          <input type="text" name="isim" placeholder="Adınız" style="width: 100%; padding: 12px; margin-bottom: 15px; background: #111522; border: 1px solid #333; color: white; border-radius: 4px;">
+          <textarea name="yorum" class="comment-input" placeholder="Yorumunuz..."></textarea>
+          <button type="submit" class="send-button">📨 Yorumu Gönder</button>
+        </form>
+        <p style="color: #666; font-size: 12px; margin-top: 10px;">Yorumunuz bize mail olarak iletilecektir.</p>
       </div>
     </div>
   </div>
+
+  <!-- JavaScript for Survey -->
+  <script>
+    function selectOption(element, value) {
+      // Remove selected class from all options
+      document.querySelectorAll('.survey-option').forEach(opt => {
+        opt.classList.remove('selected');
+      });
+      // Add selected class to clicked option
+      element.classList.add('selected');
+      // Check the radio button
+      const radio = element.querySelector('input[type="radio"]');
+      if (radio) {
+        radio.checked = true;
+      }
+    }
+  </script>
 </body>
 </html>
