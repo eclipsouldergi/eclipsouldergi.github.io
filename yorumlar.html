@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Eclip Soul | Yorumlar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .comments-container { max-width: 800px; margin: 0 auto; }
+    .comment-card {
+      background: #111522; border: 1px solid #333; border-radius: 8px;
+      padding: 25px; margin-bottom: 20px; border-left: 3px solid #d4af37;
+    }
+    .comment-name { color: #d4af37; font-weight: bold; font-size: 18px; }
+    .comment-text { font-size: 16px; line-height: 1.6; color: #ccc; }
+    .survey-section {
+      background: #0b0f1a; border: 2px solid #d4af37; border-radius: 8px;
+      padding: 30px; margin: 40px 0;
+    }
+    .survey-title { color: #d4af37; font-size: 24px; margin-bottom: 20px; }
+    .survey-option {
+      background: #111522; border: 1px solid #333; padding: 15px;
+      margin-bottom: 10px; border-radius: 4px; cursor: pointer;
+    }
+    .survey-option:hover { border-color: #d4af37; transform: translateX(5px); }
+    .survey-button {
+      background: #d4af37; color: #0b0f1a; border: none;
+      padding: 12px 30px; border-radius: 4px; cursor: pointer; font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>ECLIP SOUL</h1>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="subat.html">Şubat 2026</a>
+    <a href="mart.html">Mart 2026</a>
+    <a href="yorumlar.html">Yorumlar</a>
+    <div class="sidebar-section">
+      <h4>✧ İLETİŞİM ✧</h4>
+      <a href="mailto:eclipsouldergi@gmail.com" class="contact-button">📧 Bize Yazın</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="comments-container">
+      <h2 style="color: #d4af37; font-size: 36px;">YORUMLAR</h2>
+      
+      <div class="comment-card">
+        <div class="comment-name">Elif Y.</div>
+        <div class="comment-text">"Deliquium kavramı çok etkileyici. Ay tutulması mitolojileri bölümünü çok sevdim."</div>
+      </div>
+      
+      <div class="comment-card">
+        <div class="comment-name">Mert K.</div>
+        <div class="comment-text">"Hiraeth sayısını dört gözle bekliyorum. Nostalji teması çok iyi seçim."</div>
+      </div>
+      
+      <!-- ANKET -->
+      <div class="survey-section">
+        <h3 class="survey-title">✧ ANKET ✧</h3>
+        <p style="font-size: 18px; margin-bottom: 20px;">En çok hangi temayı merak ediyorsunuz?</p>
+        <div class="survey-option">🌙 Rüyalar ve Bilinçaltı</div>
+        <div class="survey-option">⚡ Mitoloji ve Tanrıçalar</div>
+        <div class="survey-option">📷 Nostalji ve Anılar</div>
+        <div class="survey-option">🌌 Felsefe ve Varoluş</div>
+        <div class="survey-option">🎭 Şiir ve Edebiyat</div>
+        <button class="survey-button">Oy Ver</button>
+        <p style="color: #666;">32 kişi oy verdi</p>
+      </div>
+      
+      <!-- YORUM GÖNDER -->
+      <div style="margin-top: 40px;">
+        <h3 style="color: #d4af37;">Siz de yorum yapın</h3>
+        <textarea placeholder="Yorumunuz..." style="width: 100%; padding: 15px; background: #111522; border: 1px solid #333; color: white; border-radius: 4px; min-height: 100px;"></textarea>
+        <button style="background: #d4af37; color: #0b0f1a; border: none; padding: 10px 25px; margin-top: 10px; border-radius: 4px;">Gönder</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
