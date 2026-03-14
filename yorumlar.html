@@ -8,181 +8,136 @@
   <style>
     .comments-container { max-width: 800px; margin: 0 auto; }
     .comment-card {
-      background: #111522; border: 1px solid #333; border-radius: 8px;
+      background: #111522; border: 1px solid #333; border-radius: 12px;
       padding: 25px; margin-bottom: 20px; border-left: 3px solid #d4af37;
     }
     .comment-name { color: #d4af37; font-weight: bold; font-size: 18px; }
     .comment-text { font-size: 16px; line-height: 1.6; color: #ccc; }
-    .comment-date { color: #666; font-size: 12px; margin-top: 10px; }
-    .survey-section {
-      background: #0b0f1a; border: 2px solid #d4af37; border-radius: 8px;
-      padding: 30px; margin: 40px 0;
+    .survey-box {
+      background: linear-gradient(145deg, #0b0f1a, #111522);
+      padding: 30px; border-radius: 12px; margin: 40px 0;
+      border: 1px solid #d4af37;
     }
-    .survey-title { color: #d4af37; font-size: 24px; margin-bottom: 20px; }
-    .survey-option {
-      background: #111522; border: 1px solid #333; padding: 15px;
-      margin-bottom: 10px; border-radius: 4px; cursor: pointer;
-      transition: all 0.2s ease;
+    .mood-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;
+      margin: 25px 0;
     }
-    .survey-option:hover { 
-      border-color: #d4af37; 
-      background: #1a1e2a;
-      transform: translateX(5px); 
+    .mood-item {
+      background: #111522; padding: 20px; border-radius: 12px;
+      text-align: center; border: 1px solid #333; cursor: pointer;
+      transition: all 0.3s;
     }
-    .survey-option.selected {
-      background: #d4af37;
-      color: #0b0f1a;
+    .mood-item:hover {
       border-color: #d4af37;
-    }
-    .survey-button {
-      background: #d4af37; color: #0b0f1a; border: none;
-      padding: 12px 30px; border-radius: 4px; cursor: pointer; font-weight: bold;
-      margin-top: 20px;
-      transition: all 0.2s ease;
-    }
-    .survey-button:hover {
-      background: #e6c456;
       transform: scale(1.02);
     }
-    .comment-input {
-      width: 100%; 
-      padding: 15px; 
-      background: #111522; 
-      border: 1px solid #333; 
-      color: white; 
-      border-radius: 4px; 
-      min-height: 100px;
-      font-family: Georgia, serif;
-      margin-bottom: 10px;
-    }
-    .comment-input:focus {
-      outline: none;
-      border-color: #d4af37;
-    }
-    .send-button {
-      background: #d4af37; 
-      color: #0b0f1a; 
-      border: none; 
-      padding: 10px 25px; 
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .send-button:hover {
-      background: #e6c456;
-    }
-    .vote-count {
-      color: #666; 
-      font-size: 14px; 
-      margin-top: 15px;
-      text-align: right;
+    .mood-item.selected {
+      background: #d4af37; color: #0b0f1a;
     }
   </style>
 </head>
 <body>
   <div class="sidebar">
     <h1>ECLIP SOUL</h1>
-    <a href="index.html">Ana Sayfa</a>
-    <a href="subat.html">Şubat 2026</a>
-    <a href="mart.html">Mart 2026</a>
-    <a href="yorumlar.html">Yorumlar</a>
+    <div style="margin-bottom: 30px;">
+      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="subat.html">Şubat 2026</a>
+      <a href="mart.html">Mart 2026</a>
+      <a href="yorumlar.html">Yorumlar</a>
+    </div>
     <div class="sidebar-section">
-      <h4>✧ İLETİŞİM ✧</h4>
+      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
       <a href="mailto:eclipsouldergi98@gmail.com" class="contact-button">📧 Bize Yazın</a>
     </div>
   </div>
 
   <div class="content">
     <div class="comments-container">
-      <h2 style="color: #d4af37; font-size: 36px; margin-bottom: 40px;">YORUMLAR</h2>
+      <h1 style="color: #d4af37; font-size: 36px; margin-bottom: 30px;">YORUMLAR</h1>
       
-      <!-- ÖRNEK YORUMLAR -->
+      <!-- YORUMLAR -->
       <div class="comment-card">
         <div class="comment-name">Elif Y.</div>
-        <div class="comment-text">"Deliquium kavramı çok etkileyici. Ay tutulması mitolojileri bölümünü çok sevdim. Devamını bekliyoruz!"</div>
-        <div class="comment-date">14 Mart 2026</div>
+        <div class="comment-text">"Deliquium kavramı çok etkileyici. Ay tutulması mitolojileri bölümünü çok sevdim."</div>
+        <div style="color: #666; font-size: 12px; margin-top: 10px;">14 Mart 2026</div>
       </div>
       
       <div class="comment-card">
         <div class="comment-name">Mert K.</div>
-        <div class="comment-text">"Hiraeth sayısını dört gözle bekliyorum. Nostalji teması şu aralar tam da ihtiyacım olan şey."</div>
-        <div class="comment-date">10 Mart 2026</div>
+        <div class="comment-text">"Hiraeth sayısını dört gözle bekliyorum. Nostalji teması çok iyi."</div>
+        <div style="color: #666; font-size: 12px; margin-top: 10px;">10 Mart 2026</div>
       </div>
 
-      <div class="comment-card">
-        <div class="comment-name">Zeynep A.</div>
-        <div class="comment-text">"Şakayık çiçeği yazısı harikaydı. Mitolojiyle botanik nasıl bu kadar güzel birleşir ancak."</div>
-        <div class="comment-date">5 Mart 2026</div>
-      </div>
-      
-      <!-- ANKET BÖLÜMÜ - RUH HALİ -->
-<div class="survey-section" style="background: linear-gradient(145deg, #0b0f1a 0%, #1a1e2a 100%);">
-  <h3 class="survey-title" style="text-align: center;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
-  
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-    
-    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer; transition: all 0.3s;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
-      <span style="font-size: 40px; display: block;">🌙</span>
-      <h4 style="margin: 10px 0;">Hüzünlü</h4>
-      <p style="font-size: 12px; color: #888;">"Ay ışığında kayboldum"</p>
-    </div>
-    
-    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
-      <span style="font-size: 40px; display: block;">☕</span>
-      <h4 style="margin: 10px 0;">Nostaljik</h4>
-      <p style="font-size: 12px; color: #888;">"Eski günlere özlem"</p>
-    </div>
-    
-    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
-      <span style="font-size: 40px; display: block;">🌌</span>
-      <h4 style="margin: 10px 0;">Felsefi</h4>
-      <p style="font-size: 12px; color: #888;">"Varoluşu sorguluyorum"</p>
-    </div>
-    
-    <div style="background: #111522; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #333; cursor: pointer;" onclick="this.style.background='#d4af37'; this.style.color='#0b0f1a';">
-      <span style="font-size: 40px; display: block;">⚡</span>
-      <h4 style="margin: 10px 0;">İsyankar</h4>
-      <p style="font-size: 12px; color: #888;">"Kuralları yıkmak istiyorum"</p>
-    </div>
-    
-  </div>
-  
-  <form method="post" action="mailto:eclipsouldergi98@gmail.com" enctype="text/plain" style="text-align: center; margin-top: 25px;">
-    <input type="hidden" name="ruh_hali" id="selectedMood" value="">
-    <button type="submit" class="survey-button" style="width: 100%;">✦ SEÇİMİMİ GÖNDER ✦</button>
-  </form>
-  
-  <p style="text-align: center; color: #666; font-size: 12px; margin-top: 15px;">43 kişi katıldı</p>
-</div>
-      
-      <!-- YORUM GÖNDERME BÖLÜMÜ -->
-      <div style="margin-top: 40px;">
-        <h3 style="color: #d4af37; margin-bottom: 20px;">Siz de yorum yapın</h3>
+      <!-- ANKET - RUH HALİ -->
+      <div class="survey-box">
+        <h3 style="color: #d4af37; text-align: center; margin-bottom: 20px;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
+        
         <form method="post" action="mailto:eclipsouldergi98@gmail.com" enctype="text/plain">
-          <input type="text" name="isim" placeholder="Adınız" style="width: 100%; padding: 12px; margin-bottom: 15px; background: #111522; border: 1px solid #333; color: white; border-radius: 4px;">
-          <textarea name="yorum" class="comment-input" placeholder="Yorumunuz..."></textarea>
-          <button type="submit" class="send-button">📨 Yorumu Gönder</button>
+          <div class="mood-grid">
+            <label class="mood-item">
+              <input type="radio" name="ruh_hali" value="Hüzünlü" style="display: none;">
+              <span style="font-size: 40px;">🌙</span>
+              <h4>Hüzünlü</h4>
+              <p style="font-size: 12px;">"Ay ışığında kayboldum"</p>
+            </label>
+            
+            <label class="mood-item">
+              <input type="radio" name="ruh_hali" value="Nostaljik" style="display: none;">
+              <span style="font-size: 40px;">☕</span>
+              <h4>Nostaljik</h4>
+              <p style="font-size: 12px;">"Eski günlere özlem"</p>
+            </label>
+            
+            <label class="mood-item">
+              <input type="radio" name="ruh_hali" value="Felsefi" style="display: none;">
+              <span style="font-size: 40px;">🌌</span>
+              <h4>Felsefi</h4>
+              <p style="font-size: 12px;">"Varoluşu sorguluyorum"</p>
+            </label>
+            
+            <label class="mood-item">
+              <input type="radio" name="ruh_hali" value="İsyankar" style="display: none;">
+              <span style="font-size: 40px;">⚡</span>
+              <h4>İsyankar</h4>
+              <p style="font-size: 12px;">"Kuralları yıkmak istiyorum"</p>
+            </label>
+          </div>
+          
+          <button type="submit" class="hero-button" style="width: 100%;">✦ SEÇİMİMİ GÖNDER ✦</button>
         </form>
-        <p style="color: #666; font-size: 12px; margin-top: 10px;">Yorumunuz bize mail olarak iletilecektir.</p>
+        
+        <p style="text-align: center; color: #666; font-size: 12px; margin-top: 15px;">48 kişi katıldı</p>
+      </div>
+
+      <!-- AYIN SORUSU -->
+      <div style="background: #111522; padding: 30px; margin: 40px 0; border-radius: 12px; text-align: center;">
+        <span style="font-size: 40px;">❓</span>
+        <h3 style="color: #d4af37;">AYIN SORUSU</h3>
+        <p style="font-size: 20px; margin: 20px 0;">"Bir anıyı fotoğraf mı yoksa hissettirdiği duygu mu daha gerçek kılar?"</p>
+        <a href="mailto:eclipsouldergi98@gmail.com?subject=Ayın Sorusu" class="contact-button">CEVAPLA</a>
+      </div>
+
+      <!-- YORUM GÖNDER -->
+      <div style="margin: 50px 0;">
+        <h3 style="color: #d4af37;">Siz de yorum yapın</h3>
+        <form method="post" action="mailto:eclipsouldergi98@gmail.com" enctype="text/plain">
+          <input type="text" name="isim" placeholder="Adınız" style="width: 100%; padding: 12px; margin-bottom: 15px; background: #111522; border: 1px solid #333; color: white; border-radius: 8px;">
+          <textarea name="yorum" placeholder="Yorumunuz..." style="width: 100%; padding: 15px; background: #111522; border: 1px solid #333; color: white; border-radius: 8px; min-height: 120px;"></textarea>
+          <button type="submit" class="hero-button" style="margin-top: 15px;">Yorumu Gönder</button>
+        </form>
       </div>
     </div>
   </div>
 
-  <!-- JavaScript for Survey -->
   <script>
-    function selectOption(element, value) {
-      // Remove selected class from all options
-      document.querySelectorAll('.survey-option').forEach(opt => {
-        opt.classList.remove('selected');
+    document.querySelectorAll('.mood-item').forEach(item => {
+      item.addEventListener('click', function() {
+        document.querySelectorAll('.mood-item').forEach(i => i.classList.remove('selected'));
+        this.classList.add('selected');
+        this.querySelector('input[type="radio"]').checked = true;
       });
-      // Add selected class to clicked option
-      element.classList.add('selected');
-      // Check the radio button
-      const radio = element.querySelector('input[type="radio"]');
-      if (radio) {
-        radio.checked = true;
-      }
-    }
+    });
   </script>
 </body>
-</html>
+        </html>   
