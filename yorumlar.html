@@ -70,54 +70,116 @@
         <div style="color: #666; font-size: 12px; margin-top: 10px;">10 Mart 2026</div>
       </div>
 
-      <!-- ANKET - RUH HALİ -->
-      <div class="survey-box">
-        <h3 style="color: #d4af37; text-align: center; margin-bottom: 20px;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
-        
-        <form method="post" action="mailto:eclipsouldergi98@gmail.com" enctype="text/plain">
-          <div class="mood-grid">
-            <label class="mood-item">
-              <input type="radio" name="ruh_hali" value="Hüzünlü" style="display: none;">
-              <span style="font-size: 40px;">🌙</span>
-              <h4>Hüzünlü</h4>
-              <p style="font-size: 12px;">"Ay ışığında kayboldum"</p>
-            </label>
-            
-            <label class="mood-item">
-              <input type="radio" name="ruh_hali" value="Nostaljik" style="display: none;">
-              <span style="font-size: 40px;">☕</span>
-              <h4>Nostaljik</h4>
-              <p style="font-size: 12px;">"Eski günlere özlem"</p>
-            </label>
-            
-            <label class="mood-item">
-              <input type="radio" name="ruh_hali" value="Felsefi" style="display: none;">
-              <span style="font-size: 40px;">🌌</span>
-              <h4>Felsefi</h4>
-              <p style="font-size: 12px;">"Varoluşu sorguluyorum"</p>
-            </label>
-            
-            <label class="mood-item">
-              <input type="radio" name="ruh_hali" value="İsyankar" style="display: none;">
-              <span style="font-size: 40px;">⚡</span>
-              <h4>İsyankar</h4>
-              <p style="font-size: 12px;">"Kuralları yıkmak istiyorum"</p>
-            </label>
-          </div>
-          
-          <button type="submit" class="hero-button" style="width: 100%;">✦ SEÇİMİMİ GÖNDER ✦</button>
-        </form>
-        
-        <p style="text-align: center; color: #666; font-size: 12px; margin-top: 15px;">48 kişi katıldı</p>
-      </div>
+<!-- RUH HALİ ANKETİ - TIKLA VE GÖR -->
+<div style="background: linear-gradient(145deg, #0b0f1a, #111522); padding: 30px; border-radius: 12px; margin: 40px 0; border: 1px solid #d4af37;">
+  
+  <h3 style="color: #d4af37; text-align: center; margin-bottom: 25px;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
+  
+  <!-- Hüzünlü -->
+  <div style="margin-bottom: 20px;" onclick="oyVer('huzunlu')">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+      <span>🌙 Hüzünlü</span>
+      <span style="color: #d4af37;" id="huzunlu-sayi">13</span>
+    </div>
+    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+      <div id="huzunlu-bar" style="width: 43%; height: 8px; background: #d4af37;"></div>
+    </div>
+  </div>
+  
+  <!-- Nostaljik -->
+  <div style="margin-bottom: 20px;" onclick="oyVer('nostaljik')">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+      <span>☕ Nostaljik</span>
+      <span style="color: #d4af37;" id="nostaljik-sayi">17</span>
+    </div>
+    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+      <div id="nostaljik-bar" style="width: 67%; height: 8px; background: #d4af37;"></div>
+    </div>
+  </div>
+  
+  <!-- Felsefi -->
+  <div style="margin-bottom: 20px;" onclick="oyVer('felsefi')">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+      <span>🌌 Felsefi</span>
+      <span style="color: #d4af37;" id="felsefi-sayi">14</span>
+    </div>
+    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+      <div id="felsefi-bar" style="width: 28%; height: 8px; background: #d4af37;"></div>
+    </div>
+  </div>
+  
+  <!-- İsyankar -->
+  <div style="margin-bottom: 20px;" onclick="oyVer('isyankar')">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+      <span>⚡ İsyankar</span>
+      <span style="color: #d4af37;" id="isyankar-sayi">19</span>
+    </div>
+    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+      <div id="isyankar-bar" style="width: 32%; height: 8px; background: #d4af37;"></div>
+    </div>
+  </div>
+  
+  <p style="text-align: center; color: #888; font-size: 13px; margin-top: 20px;">Toplam 170 oy • Bir seçeneğe tıkla ve oy ver</p>
+  
+</div>
 
-      <!-- AYIN SORUSU -->
-      <div style="background: #111522; padding: 30px; margin: 40px 0; border-radius: 12px; text-align: center;">
-        <span style="font-size: 40px;">❓</span>
-        <h3 style="color: #d4af37;">AYIN SORUSU</h3>
-        <p style="font-size: 20px; margin: 20px 0;">"Bir anıyı fotoğraf mı yoksa hissettirdiği duygu mu daha gerçek kılar?"</p>
-        <a href="mailto:eclipsouldergi98@gmail.com?subject=Ayın Sorusu" class="contact-button">CEVAPLA</a>
-      </div>
+<script>
+  let oylar = {
+    huzunlu: 13,
+    nostaljik: 17,
+    felsefi: 14,
+    isyankar: 19
+  };
+  
+  function oyVer(secim) {
+    oylar[secim]++;
+    toplamOyuGuncelle();
+  }
+  
+  function toplamOyuGuncelle() {
+    // Sayıları güncelle
+    document.getElementById('huzunlu-sayi').innerText = oylar.huzunlu;
+    document.getElementById('nostaljik-sayi').innerText = oylar.nostaljik;
+    document.getElementById('felsefi-sayi').innerText = oylar.felsefi;
+    document.getElementById('isyankar-sayi').innerText = oylar.isyankar;
+    
+    // Yüzdeleri hesapla
+    let toplam = oylar.huzunlu + oylar.nostaljik + oylar.felsefi + oylar.isyankar;
+    
+    document.getElementById('huzunlu-bar').style.width = (oylar.huzunlu / toplam * 100) + '%';
+    document.getElementById('nostaljik-bar').style.width = (oylar.nostaljik / toplam * 100) + '%';
+    document.getElementById('felsefi-bar').style.width = (oylar.felsefi / toplam * 100) + '%';
+    document.getElementById('isyankar-bar').style.width = (oylar.isyankar / toplam * 100) + '%';
+  }
+</script>
+
+      <!-- AYIN SORUSU - TIKLA OYLA -->
+<div style="background: #111522; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
+  <span style="font-size: 40px;">❓</span>
+  <h3 style="color: #d4af37;">AYIN SORUSU</h3>
+  <p style="font-size: 20px; margin: 20px;">"Fotoğraflar mı daha gerçek, anılar mı?"</p>
+  
+  <div style="display: flex; gap: 20px; justify-content: center;">
+    <div onclick="soruOy('fotograf')" style="background: #0b0f1a; padding: 15px 30px; border-radius: 40px; border: 1px solid #d4af37; cursor: pointer;">
+      📷 Fotoğraf <span id="fotograf-sayi" style="color: #d4af37;">128</span>
+    </div>
+    <div onclick="soruOy('ani')" style="background: #0b0f1a; padding: 15px 30px; border-radius: 40px; border: 1px solid #d4af37; cursor: pointer;">
+      💭 Anı <span id="ani-sayi" style="color: #d4af37;">156</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  function soruOy(secim) {
+    if(secim === 'fotograf') {
+      let sayi = document.getElementById('fotograf-sayi');
+      sayi.innerText = parseInt(sayi.innerText) + 1;
+    } else {
+      let sayi = document.getElementById('ani-sayi');
+      sayi.innerText = parseInt(sayi.innerText) + 1;
+    }
+  }
+</script>
 
       <!-- YORUM GÖNDER -->
       <div style="margin: 50px 0;">
