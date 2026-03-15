@@ -70,7 +70,7 @@
         <div style="color: #666; font-size: 12px; margin-top: 10px;">10 Mart 2026</div>
       </div>
     
-<!-- RUH HALİ ANKETİ - KALICI -->
+    <!-- RUH HALİ ANKETİ - KALICI (BAŞLANGIÇ DEĞERLERİYLE) -->
 <div style="background: linear-gradient(145deg, #0b0f1a, #111522); padding: 30px; border-radius: 12px; margin: 40px 0; border: 1px solid #d4af37;">
   
   <h3 style="color: #d4af37; text-align: center; margin-bottom: 25px;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
@@ -126,12 +126,12 @@
 </div>
 
 <script>
-  // LocalStorage'dan oyları yükle
+  // LocalStorage'dan oyları yükle, yoksa başlangıç değerlerini kullan
   let oylar = {
-    huzunlu: parseInt(localStorage.getItem('huzunlu')) || 0,
-    nostaljik: parseInt(localStorage.getItem('nostaljik')) || 0,
-    felsefi: parseInt(localStorage.getItem('felsefi')) || 0,
-    isyankar: parseInt(localStorage.getItem('isyankar')) || 0
+    huzunlu: parseInt(localStorage.getItem('huzunlu')) || 43,
+    nostaljik: parseInt(localStorage.getItem('nostaljik')) || 67,
+    felsefi: parseInt(localStorage.getItem('felsefi')) || 28,
+    isyankar: parseInt(localStorage.getItem('isyankar')) || 32
   };
   
   // Daha önce oy kullanılmış mı?
@@ -187,19 +187,17 @@
     // Toplam oyu hesapla
     let toplam = oylar.huzunlu + oylar.nostaljik + oylar.felsefi + oylar.isyankar;
     
-    // Yüzdeleri güncelle (toplam 0 ise yüzde 0 olsun)
-    if (toplam > 0) {
-      document.getElementById('huzunlu-bar').style.width = (oylar.huzunlu / toplam * 100).toFixed(1) + '%';
-      document.getElementById('nostaljik-bar').style.width = (oylar.nostaljik / toplam * 100).toFixed(1) + '%';
-      document.getElementById('felsefi-bar').style.width = (oylar.felsefi / toplam * 100).toFixed(1) + '%';
-      document.getElementById('isyankar-bar').style.width = (oylar.isyankar / toplam * 100).toFixed(1) + '%';
-    }
+    // Yüzdeleri güncelle
+    document.getElementById('huzunlu-bar').style.width = (oylar.huzunlu / toplam * 100).toFixed(1) + '%';
+    document.getElementById('nostaljik-bar').style.width = (oylar.nostaljik / toplam * 100).toFixed(1) + '%';
+    document.getElementById('felsefi-bar').style.width = (oylar.felsefi / toplam * 100).toFixed(1) + '%';
+    document.getElementById('isyankar-bar').style.width = (oylar.isyankar / toplam * 100).toFixed(1) + '%';
     
     // Toplam oyu göster
     document.getElementById('toplam-oy').innerText = `Toplam ${toplam} oy`;
   }
 </script>
-      <!-- AYIN SORUSU - KALICI -->
+      <!-- AYIN SORUSU - KALICI (BAŞLANGIÇ DEĞERLERİYLE) -->
 <div style="background: #111522; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
   <span style="font-size: 40px;">❓</span>
   <h3 style="color: #d4af37;">AYIN SORUSU</h3>
@@ -220,7 +218,7 @@
 </div>
 
 <script>
-  // LocalStorage'dan soru oylarını yükle
+  // LocalStorage'dan soru oylarını yükle, yoksa başlangıç değerlerini kullan
   let soruOylari = {
     fotograf: parseInt(localStorage.getItem('soru_fotograf')) || 128,
     ani: parseInt(localStorage.getItem('soru_ani')) || 156
@@ -269,6 +267,7 @@
     let toplam = soruOylari.fotograf + soruOylari.ani;
     document.getElementById('toplam-soru').innerText = `Toplam ${toplam} oy`;
   }
+</script>
 </script>
       <!-- YORUM GÖNDER -->
       <div style="margin: 50px 0;">
