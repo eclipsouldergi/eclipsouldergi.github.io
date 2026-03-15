@@ -13,34 +13,13 @@
     }
     .comment-name { color: #d4af37; font-weight: bold; font-size: 18px; }
     .comment-text { font-size: 16px; line-height: 1.6; color: #ccc; }
-    .survey-box {
-      background: linear-gradient(145deg, #0b0f1a, #111522);
-      padding: 30px; border-radius: 12px; margin: 40px 0;
-      border: 1px solid #d4af37;
-    }
-    .mood-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;
-      margin: 25px 0;
-    }
-    .mood-item {
-      background: #111522; padding: 20px; border-radius: 12px;
-      text-align: center; border: 1px solid #333; cursor: pointer;
-      transition: all 0.3s;
-    }
-    .mood-item:hover {
-      border-color: #d4af37;
-      transform: scale(1.02);
-    }
-    .mood-item.selected {
-      background: #d4af37; color: #0b0f1a;
-    }
   </style>
 </head>
 <body>
   <div class="sidebar">
     <h1>ECLIP SOUL</h1>
     <div style="margin-bottom: 30px;">
-      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
+      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
       <a href="index.html">Ana Sayfa</a>
       <a href="subat.html">Şubat 2026</a>
       <a href="mart.html">Mart 2026</a>
@@ -48,7 +27,7 @@
       <a href="künye.html">Künye</a>
     </div>
     <div class="sidebar-section">
-      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
+      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
       <a href="mailto:eclipsouldergi98@gmail.com" class="contact-button">📧 Bize Yazın</a>
     </div>
   </div>
@@ -70,205 +49,79 @@
         <div style="color: #666; font-size: 12px; margin-top: 10px;">10 Mart 2026</div>
       </div>
     
-    <!-- RUH HALİ ANKETİ - KALICI (BAŞLANGIÇ DEĞERLERİYLE) -->
-<div style="background: linear-gradient(145deg, #0b0f1a, #111522); padding: 30px; border-radius: 12px; margin: 40px 0; border: 1px solid #d4af37;">
-  
-  <h3 style="color: #d4af37; text-align: center; margin-bottom: 25px;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
-  
-  <div id="anket-mesaj" style="text-align: center; color: #d4af37; margin-bottom: 15px; font-size: 14px;"></div>
-  
-  <!-- Hüzünlü -->
-  <div id="huzunlu-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('huzunlu')">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-      <span>🌙 Hüzünlü</span>
-      <span style="color: #d4af37;" id="huzunlu-sayi">0</span>
-    </div>
-    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
-      <div id="huzunlu-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
-    </div>
-  </div>
-  
-  <!-- Nostaljik -->
-  <div id="nostaljik-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('nostaljik')">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-      <span>☕ Nostaljik</span>
-      <span style="color: #d4af37;" id="nostaljik-sayi">0</span>
-    </div>
-    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
-      <div id="nostaljik-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
-    </div>
-  </div>
-  
-  <!-- Felsefi -->
-  <div id="felsefi-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('felsefi')">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-      <span>🌌 Felsefi</span>
-      <span style="color: #d4af37;" id="felsefi-sayi">0</span>
-    </div>
-    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
-      <div id="felsefi-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
-    </div>
-  </div>
-  
-  <!-- İsyankar -->
-  <div id="isyankar-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('isyankar')">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-      <span>⚡ İsyankar</span>
-      <span style="color: #d4af37;" id="isyankar-sayi">0</span>
-    </div>
-    <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
-      <div id="isyankar-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
-    </div>
-  </div>
-  
-  <p style="text-align: center; color: #888; font-size: 13px; margin-top: 20px;" id="toplam-oy">Toplam 0 oy</p>
-  
-</div>
+      <!-- RUH HALİ ANKETİ -->
+      <div style="background: linear-gradient(145deg, #0b0f1a, #111522); padding: 30px; border-radius: 12px; margin: 40px 0; border: 1px solid #d4af37;">
+        <h3 style="color: #d4af37; text-align: center; margin-bottom: 25px;">✧ BU AY RUHSAL DURUMUNUZ HANGİSİ? ✧</h3>
+        
+        <div id="anket-mesaj" style="text-align: center; color: #d4af37; margin-bottom: 15px; font-size: 14px;"></div>
+        
+        <!-- Hüzünlü -->
+        <div id="huzunlu-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('huzunlu')">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>🌙 Hüzünlü</span>
+            <span style="color: #d4af37;" id="huzunlu-sayi">0</span>
+          </div>
+          <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+            <div id="huzunlu-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
+          </div>
+        </div>
+        
+        <!-- Nostaljik -->
+        <div id="nostaljik-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('nostaljik')">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>☕ Nostaljik</span>
+            <span style="color: #d4af37;" id="nostaljik-sayi">0</span>
+          </div>
+          <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+            <div id="nostaljik-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
+          </div>
+        </div>
+        
+        <!-- Felsefi -->
+        <div id="felsefi-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('felsefi')">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>🌌 Felsefi</span>
+            <span style="color: #d4af37;" id="felsefi-sayi">0</span>
+          </div>
+          <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+            <div id="felsefi-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
+          </div>
+        </div>
+        
+        <!-- İsyankar -->
+        <div id="isyankar-option" style="margin-bottom: 20px; cursor: pointer;" onclick="oyVer('isyankar')">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>⚡ İsyankar</span>
+            <span style="color: #d4af37;" id="isyankar-sayi">0</span>
+          </div>
+          <div style="height: 8px; background: #333; border-radius: 10px; overflow: hidden;">
+            <div id="isyankar-bar" style="width: 0%; height: 8px; background: #d4af37;"></div>
+          </div>
+        </div>
+        
+        <p style="text-align: center; color: #888; font-size: 13px; margin-top: 20px;" id="toplam-oy">Toplam 0 oy</p>
+      </div>
 
-<script>
-  // LocalStorage'dan oyları yükle, yoksa başlangıç değerlerini kullan
-  let oylar = {
-    huzunlu: parseInt(localStorage.getItem('huzunlu')) || 43,
-    nostaljik: parseInt(localStorage.getItem('nostaljik')) || 67,
-    felsefi: parseInt(localStorage.getItem('felsefi')) || 28,
-    isyankar: parseInt(localStorage.getItem('isyankar')) || 32
-  };
-  
-  // Daha önce oy kullanılmış mı?
-  let oyKullanildi = localStorage.getItem('oyKullanildi') === 'true';
-  
-  // Sayfa yüklendiğinde oyları göster
-  window.onload = function() {
-    gostergeGuncelle();
-    if (oyKullanildi) {
-      document.getElementById('anket-mesaj').innerHTML = '📊 Zaten oy kullandınız. Sonuçları görebilirsiniz.';
-    }
-  };
-  
-  function oyVer(secim) {
-    // Eğer daha önce oy kullanıldıysa uyar ve çık
-    if (oyKullanildi) {
-      document.getElementById('anket-mesaj').innerHTML = '❌ Zaten oy kullandınız!';
-      return;
-    }
-    
-    // Seçilen oyu 1 artır
-    oylar[secim]++;
-    
-    // LocalStorage'a kaydet
-    localStorage.setItem('huzunlu', oylar.huzunlu);
-    localStorage.setItem('nostaljik', oylar.nostaljik);
-    localStorage.setItem('felsefi', oylar.felsefi);
-    localStorage.setItem('isyankar', oylar.isyankar);
-    localStorage.setItem('oyKullanildi', 'true');
-    
-    // Oyun kullanıldığını işaretle
-    oyKullanildi = true;
-    
-    // Göstergeleri güncelle
-    gostergeGuncelle();
-    
-    // Seçeneği vurgula
-    document.getElementById(secim + '-option').style.background = '#1a1e2a';
-    document.getElementById(secim + '-option').style.borderRadius = '8px';
-    document.getElementById(secim + '-option').style.padding = '5px';
-    
-    // Başarı mesajı
-    document.getElementById('anket-mesaj').innerHTML = '✅ Oyun kaydedildi!';
-  }
-  
-  function gostergeGuncelle() {
-    // Sayıları güncelle
-    document.getElementById('huzunlu-sayi').innerText = oylar.huzunlu;
-    document.getElementById('nostaljik-sayi').innerText = oylar.nostaljik;
-    document.getElementById('felsefi-sayi').innerText = oylar.felsefi;
-    document.getElementById('isyankar-sayi').innerText = oylar.isyankar;
-    
-    // Toplam oyu hesapla
-    let toplam = oylar.huzunlu + oylar.nostaljik + oylar.felsefi + oylar.isyankar;
-    
-    // Yüzdeleri güncelle
-    document.getElementById('huzunlu-bar').style.width = (oylar.huzunlu / toplam * 100).toFixed(1) + '%';
-    document.getElementById('nostaljik-bar').style.width = (oylar.nostaljik / toplam * 100).toFixed(1) + '%';
-    document.getElementById('felsefi-bar').style.width = (oylar.felsefi / toplam * 100).toFixed(1) + '%';
-    document.getElementById('isyankar-bar').style.width = (oylar.isyankar / toplam * 100).toFixed(1) + '%';
-    
-    // Toplam oyu göster
-    document.getElementById('toplam-oy').innerText = `Toplam ${toplam} oy`;
-  }
-</script>
-      <!-- AYIN SORUSU - KALICI (BAŞLANGIÇ DEĞERLERİYLE) -->
-<div style="background: #111522; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
-  <span style="font-size: 40px;">❓</span>
-  <h3 style="color: #d4af37;">AYIN SORUSU</h3>
-  <p style="font-size: 20px; margin: 20px;">"Fotoğraflar mı daha gerçek, anılar mı?"</p>
-  
-  <div id="soru-mesaj" style="color: #d4af37; margin-bottom: 15px;"></div>
-  
-  <div style="display: flex; gap: 20px; justify-content: center;">
-    <div id="fotograf-option" onclick="soruOy('fotograf')" style="background: #0b0f1a; padding: 15px 30px; border-radius: 40px; border: 1px solid #d4af37; cursor: pointer;">
-      📷 Fotoğraf <span id="fotograf-sayi" style="color: #d4af37;">0</span>
-    </div>
-    <div id="ani-option" onclick="soruOy('ani')" style="background: #0b0f1a; padding: 15px 30px; border-radius: 40px; border: 1px solid #d4af37; cursor: pointer;">
-      💭 Anı <span id="ani-sayi" style="color: #d4af37;">0</span>
-    </div>
-  </div>
-  
-  <p style="color: #888; margin-top: 20px;" id="toplam-soru">Toplam 0 oy</p>
-</div>
+      <!-- AYIN SORUSU -->
+      <div style="background: #111522; padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center;">
+        <span style="font-size: 40px;">❓</span>
+        <h3 style="color: #d4af37;">AYIN SORUSU</h3>
+        <p style="font-size: 20px; margin: 20px;">"Fotoğraflar mı daha gerçek, anılar mı?"</p>
+        
+        <div id="soru-mesaj" style="color: #d4af37; margin-bottom: 15px;"></div>
+        
+        <div style="display: flex; gap: 20px; justify-content: center;">
+          <div id="fotograf-option" onclick="soruOy('fotograf')" style="background: #0b0f1a; padding: 15px 30px; border-radius: 40px; border: 1px solid #d4af37; cursor: pointer;">
+            📷 Fotoğraf <span id="fotograf-sayi" style="color: #d4af37;">0</span>
+          </div>
+          <div id="ani-option" onclick="soruOy('ani')" style="background: #0b0f1a; padding: 15px 30px; border-radius: 40px; border: 1px solid #d4af37; cursor: pointer;">
+            💭 Anı <span id="ani-sayi" style="color: #d4af37;">0</span>
+          </div>
+        </div>
+        
+        <p style="color: #888; margin-top: 20px;" id="toplam-soru">Toplam 0 oy</p>
+      </div>
 
-<script>
-  // LocalStorage'dan soru oylarını yükle, yoksa başlangıç değerlerini kullan
-  let soruOylari = {
-    fotograf: parseInt(localStorage.getItem('soru_fotograf')) || 128,
-    ani: parseInt(localStorage.getItem('soru_ani')) || 156
-  };
-  
-  let soruOyKullanildi = localStorage.getItem('soruOyKullanildi') === 'true';
-  
-  // Sayfa yüklendiğinde göster
-  window.onload = function() {
-    soruGuncelle();
-    if (soruOyKullanildi) {
-      document.getElementById('soru-mesaj').innerHTML = '📊 Zaten oy kullandınız.';
-    }
-  };
-  
-  function soruOy(secim) {
-    if (soruOyKullanildi) {
-      document.getElementById('soru-mesaj').innerHTML = '❌ Zaten oy kullandınız!';
-      return;
-    }
-    
-    // Oyu artır
-    soruOylari[secim]++;
-    
-    // LocalStorage'a kaydet
-    localStorage.setItem('soru_fotograf', soruOylari.fotograf);
-    localStorage.setItem('soru_ani', soruOylari.ani);
-    localStorage.setItem('soruOyKullanildi', 'true');
-    
-    soruOyKullanildi = true;
-    
-    // Göstergeleri güncelle
-    soruGuncelle();
-    
-    // Seçeneği vurgula
-    document.getElementById(secim + '-option').style.background = '#d4af37';
-    document.getElementById(secim + '-option').style.color = '#0b0f1a';
-    
-    document.getElementById('soru-mesaj').innerHTML = '✅ Oyun kaydedildi!';
-  }
-  
-  function soruGuncelle() {
-    document.getElementById('fotograf-sayi').innerText = soruOylari.fotograf;
-    document.getElementById('ani-sayi').innerText = soruOylari.ani;
-    
-    let toplam = soruOylari.fotograf + soruOylari.ani;
-    document.getElementById('toplam-soru').innerText = `Toplam ${toplam} oy`;
-  }
-</script>
-</script>
       <!-- YORUM GÖNDER -->
       <div style="margin: 50px 0;">
         <h3 style="color: #d4af37;">Siz de yorum yapın</h3>
@@ -281,14 +134,106 @@
     </div>
   </div>
 
+  <!-- ANKET JAVASCRİPTLERİ -->
   <script>
-    document.querySelectorAll('.mood-item').forEach(item => {
-      item.addEventListener('click', function() {
-        document.querySelectorAll('.mood-item').forEach(i => i.classList.remove('selected'));
-        this.classList.add('selected');
-        this.querySelector('input[type="radio"]').checked = true;
-      });
-    });
+    // RUH HALİ ANKETİ
+    let oylar = {
+      huzunlu: parseInt(localStorage.getItem('huzunlu')) || 43,
+      nostaljik: parseInt(localStorage.getItem('nostaljik')) || 67,
+      felsefi: parseInt(localStorage.getItem('felsefi')) || 28,
+      isyankar: parseInt(localStorage.getItem('isyankar')) || 32
+    };
+    
+    let oyKullanildi = localStorage.getItem('oyKullanildi') === 'true';
+    
+    window.onload = function() {
+      gostergeGuncelle();
+      if (oyKullanildi) {
+        document.getElementById('anket-mesaj').innerHTML = '📊 Zaten oy kullandınız. Sonuçları görebilirsiniz.';
+      }
+      soruGuncelle();
+      if (soruOyKullanildi) {
+        document.getElementById('soru-mesaj').innerHTML = '📊 Zaten oy kullandınız.';
+      }
+    };
+    
+    function oyVer(secim) {
+      if (oyKullanildi) {
+        document.getElementById('anket-mesaj').innerHTML = '❌ Zaten oy kullandınız!';
+        return;
+      }
+      
+      oylar[secim]++;
+      
+      localStorage.setItem('huzunlu', oylar.huzunlu);
+      localStorage.setItem('nostaljik', oylar.nostaljik);
+      localStorage.setItem('felsefi', oylar.felsefi);
+      localStorage.setItem('isyankar', oylar.isyankar);
+      localStorage.setItem('oyKullanildi', 'true');
+      
+      oyKullanildi = true;
+      gostergeGuncelle();
+      
+      document.getElementById(secim + '-option').style.background = '#1a1e2a';
+      document.getElementById(secim + '-option').style.borderRadius = '8px';
+      document.getElementById(secim + '-option').style.padding = '5px';
+      
+      document.getElementById('anket-mesaj').innerHTML = '✅ Oyun kaydedildi!';
+    }
+    
+    function gostergeGuncelle() {
+      document.getElementById('huzunlu-sayi').innerText = oylar.huzunlu;
+      document.getElementById('nostaljik-sayi').innerText = oylar.nostaljik;
+      document.getElementById('felsefi-sayi').innerText = oylar.felsefi;
+      document.getElementById('isyankar-sayi').innerText = oylar.isyankar;
+      
+      let toplam = oylar.huzunlu + oylar.nostaljik + oylar.felsefi + oylar.isyankar;
+      
+      document.getElementById('huzunlu-bar').style.width = (oylar.huzunlu / toplam * 100).toFixed(1) + '%';
+      document.getElementById('nostaljik-bar').style.width = (oylar.nostaljik / toplam * 100).toFixed(1) + '%';
+      document.getElementById('felsefi-bar').style.width = (oylar.felsefi / toplam * 100).toFixed(1) + '%';
+      document.getElementById('isyankar-bar').style.width = (oylar.isyankar / toplam * 100).toFixed(1) + '%';
+      
+      document.getElementById('toplam-oy').innerText = `Toplam ${toplam} oy`;
+    }
+    
+    // AYIN SORUSU
+    let soruOylari = {
+      fotograf: parseInt(localStorage.getItem('soru_fotograf')) || 128,
+      ani: parseInt(localStorage.getItem('soru_ani')) || 156
+    };
+    
+    let soruOyKullanildi = localStorage.getItem('soruOyKullanildi') === 'true';
+    
+    function soruOy(secim) {
+      if (soruOyKullanildi) {
+        document.getElementById('soru-mesaj').innerHTML = '❌ Zaten oy kullandınız!';
+        return;
+      }
+      
+      soruOylari[secim]++;
+      
+      localStorage.setItem('soru_fotograf', soruOylari.fotograf);
+      localStorage.setItem('soru_ani', soruOylari.ani);
+      localStorage.setItem('soruOyKullanildi', 'true');
+      
+      soruOyKullanildi = true;
+      soruGuncelle();
+      
+      document.getElementById(secim + '-option').style.background = '#d4af37';
+      document.getElementById(secim + '-option').style.color = '#0b0f1a';
+      
+      document.getElementById('soru-mesaj').innerHTML = '✅ Oyun kaydedildi!';
+    }
+    
+    function soruGuncelle() {
+      document.getElementById('fotograf-sayi').innerText = soruOylari.fotograf;
+      document.getElementById('ani-sayi').innerText = soruOylari.ani;
+      
+      let toplam = soruOylari.fotograf + soruOylari.ani;
+      document.getElementById('toplam-soru').innerText = `Toplam ${toplam} oy`;
+    }
   </script>
+
 </body>
-        </html>   
+</html>
