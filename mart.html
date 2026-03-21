@@ -31,6 +31,24 @@
       font-style: italic;
       color: #ccc;
     }
+    .flipbook-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .flipbook-link a {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid #d4af37;
+      text-decoration: none;
+      color: #d4af37;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .flipbook-link a:hover {
+      background: #d4af37;
+      color: #0b0f1a;
+    }
   </style>
 </head>
 <body>
@@ -61,7 +79,7 @@
       <!-- KAPAK -->
       <img src="1_20260321_052237_0000.png" alt="Mart 2026: Hiraeth" class="cover">
 
-      <!-- MANİFESTO - YENİ AÇIKLAMA -->
+      <!-- MANİFESTO -->
       <div class="manifesto">
         <h3>HIRAETH</h3>
         
@@ -95,12 +113,18 @@
       </div>
 
       <!-- PDF -->
-      <div class="Eclipsoul 2. Sayı_20260321_211420_0000-compressed.pdf">
-        <h3 style="color: #d4af37;">📖 Dergiyi Oku</h3>
-        <iframe src="mart2026.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+      <div class="pdf-container">
+        <h3 style="color: #d4af37;">📖 Dergiyi Oku (PDF)</h3>
+        <iframe src="Eclipsoul 2. Sayı_20260321_211420_0000-compressed.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
         <div style="text-align: center; margin-top: 15px;">
-          <a href="mart2026.pdf" download style="color: #d4af37; border: 1px solid #d4af37; padding: 8px 20px; text-decoration: none; border-radius: 30px;">⬇ PDF İndir</a>
+          <a href="Eclipsoul 2. Sayı_20260321_211420_0000-compressed.pdf" download style="color: #d4af37; border: 1px solid #d4af37; padding: 8px 20px; text-decoration: none; border-radius: 30px;">⬇ PDF İndir</a>
         </div>
+      </div>
+
+      <!-- FLIPBOOK LİNKİ -->
+      <div class="flipbook-link">
+        <p>📘 Dergiyi dijital flipbook olarak okumak için:</p>
+        <a href="https://heyzine.com/flip-book/14b535d079.html" target="_blank">Flipbook'u Aç →</a>
       </div>
 
       <footer style="margin-top: 60px; color: #666; text-align: center;">© Eclip Soul Dergi — Mart 2026: Hiraeth</footer>
