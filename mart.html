@@ -7,19 +7,37 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-    .cover-placeholder {
-      width: 100%; max-width: 500px; height: 300px; margin: 30px auto;
-      border: 2px dashed var(--altin); display: flex; flex-direction: column;
-      align-items: center; justify-content: center; background: #111522;
+    .cover {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 30px auto;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
-    .hiraeth-highlight { color: var(--altin); font-weight: bold; }
+    .pdf-container {
+      background: #111522;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 40px 0;
+    }
+    .hiraeth-highlight { color: #d4af37; font-weight: bold; }
+    .quote-box {
+      background: #0b0f1a;
+      border-left: 3px solid #d4af37;
+      padding: 20px;
+      margin: 30px 0;
+      font-style: italic;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
   <div class="sidebar">
     <h1>ECLIP SOUL</h1>
     <div style="margin-bottom: 30px;">
-      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
+      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
       <a href="index.html">Ana Sayfa</a>
       <a href="subat.html">Şubat 2026</a>
       <a href="mart.html">Mart 2026</a>
@@ -27,36 +45,62 @@
       <a href="künye.html">Künye</a>
     </div>
     <div class="sidebar-section">
-      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
+      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
       <a href="mailto:eclipsouldergi98@gmail.com" class="contact-button">📧 Bize Yazın</a>
     </div>
   </div>
 
   <div class="content">
     <div class="container">
-      <a href="index.html" style="color: var(--altin); text-decoration: none;">← Ana Sayfaya Dön</a>
+      <a href="index.html" style="color: #d4af37; text-decoration: none;">← Ana Sayfaya Dön</a>
 
       <div style="letter-spacing: 3px; font-size: 13px; color: #888; margin: 30px 0 20px;">SAYI II — MART 2026</div>
       <h1>ECLIP SOUL</h1>
       <div style="font-style: italic; color: #aaa; margin-bottom: 40px;">Karanlıkta kalan cümleler için</div>
 
-      <!-- MANİFESTO -->
+      <!-- KAPAK -->
+      <img src="mart_kapak.jpg" alt="Mart 2026: Hiraeth" class="cover">
+
+      <!-- MANİFESTO - YENİ AÇIKLAMA -->
       <div class="manifesto">
         <h3>HIRAETH</h3>
-        <p><span class="hiraeth-highlight">Hiraeth</span>, Galce kökenli bir kelimedir. Özlem, hasret ve geçmişe duyulan derin bir arzuyu ifade eder. Eve dönme isteği, ama artık var olmayan bir eve...</p>
-        <p>Bu sayımızda <span class="hiraeth-highlight">nostalji</span> kavramını ele alıyoruz. Çocukluğun sisli sokakları, ilk aşkın buruk tadı, eski fotoğrafların sararmış yüzleri...</p>
+        
+        <p><span class="hiraeth-highlight">Hiraeth</span>, Galce (Welsh) kökenli bir kelimedir ve tam olarak başka bir dile çevrilmesi oldukça zordur. En basit haliyle; <span class="hiraeth-highlight">"hiç var olmamış ya da artık geri dönülemeyecek olan bir yere duyulan derin özlem"</span> anlamına gelir.</p>
+        
+        <p>Bu kavramı sadece bir "ev özlemi" olarak görmemek gerekir; içinde hüzün, keder ve geçmişe duyulan sarsılmaz bir bağlılık barındırır.</p>
+        
+        <div class="quote-box">
+          <p style="margin: 0;">"Nostalji geçmişi hatırlamaktır, Hiraeth ise geçmişteki o hisse susayıp oraya asla varamayacağını bilmektir."</p>
+        </div>
+        
+        <h4 style="color: #d4af37; margin-top: 30px;">Neden Nostalji ile İlişkilendirilir?</h4>
+        
+        <p>Hiraeth ve nostalji aslında aynı ağacın farklı dalları gibidir. Aralarındaki güçlü bağın temel nedenleri şunlardır:</p>
+        
+        <p><span class="hiraeth-highlight">✦ Zamanın Tek Yönlü Oluşu:</span> Nostalji, geçmişteki güzel anlara duyulan bir sevgidir. Hiraeth ise bu anların geçtiğini ve o "zaman dilimine" bir daha asla fiziksel olarak ulaşılamayacağını kabul etmenin verdiği sızıdır.</p>
+        
+        <p><span class="hiraeth-highlight">✦ İdealize Edilmiş Geçmiş:</span> Tıpkı nostaljide olduğu gibi, Hiraeth hissedildiğinde geçmiş olduğundan daha parlak ve huzurlu hatırlanır. Kişi, o anın içindeki zorlukları unutur ve sadece ruhunun "ait olduğunu" hissettiği o soyut duyguya odaklanır.</p>
+        
+        <p><span class="hiraeth-highlight">✦ Kayıp Hissi:</span> Her iki kavram da bir "kayıp" üzerine kuruludur. Nostalji bir anıyı yad ederken, Hiraeth o anının içinde bulunduğu mekanı veya atmosferi (artık orada olmasa bile) geri ister.</p>
+        
+        <h4 style="color: #d4af37; margin-top: 30px;">Hiraeth'i Nostaljiden Ayıran "O" İnce Çizgi</h4>
+        
+        <p>Nostalji bazen mutluluk verici bir hatırlama olabilirken, Hiraeth içinde her zaman bir miktar trajedi barındırır. Hiç gitmediğiniz bir yerin özlemini çekmek veya çocukluğunuzun geçtiği ama artık bambaşka bir yer olan mahalleniz için hissettiğiniz o "yabancılaşma" duygusu tam olarak budur.</p>
+        
+        <div class="quote-box">
+          <p style="margin: 0;">Kısaca: Nostalji geçmişi hatırlamaktır, Hiraeth ise geçmişteki o hisse susayıp oraya asla varamayacağını bilmektir.</p>
+        </div>
+        
+        <p style="margin-top: 30px;">Mart sayımız; kaybettiğimiz zamanların, geri gelmeyecek anların ve belki de hiç yaşanmamış anıların sayısıdır. <span class="hiraeth-highlight">Hiraeth</span> ile...</p>
       </div>
 
-      <!-- GEÇİCİ KAPAK -->
-      <div class="cover-placeholder">
-        <h2 style="font-size: 48px; color: var(--altin);">HIRAETH</h2>
-        <p>Nostalji / Mart 2026</p>
-        <p style="font-size: 14px;">(Kapak hazırlanıyor)</p>
-      </div>
-
-      <div class="article">
-        <p>Bir çocukluk fotoğrafına bakarken yakalıyoruz kendimizi. O gün giydiğimiz kazağı, o gün yediğimiz dondurmayı hatırlıyoruz. Ama asıl hatırladığımız, o anın içinde hissettiğimiz şey.</p>
-        <p>Mart sayımız; geçmişe özlemle bakan ama geleceğe umutla yürüyenler için.</p>
+      <!-- PDF -->
+      <div class="pdf-container">
+        <h3 style="color: #d4af37;">📖 Dergiyi Oku</h3>
+        <iframe src="mart2026.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
+        <div style="text-align: center; margin-top: 15px;">
+          <a href="mart2026.pdf" download style="color: #d4af37; border: 1px solid #d4af37; padding: 8px 20px; text-decoration: none; border-radius: 30px;">⬇ PDF İndir</a>
+        </div>
       </div>
 
       <footer style="margin-top: 60px; color: #666; text-align: center;">© Eclip Soul Dergi — Mart 2026: Hiraeth</footer>
