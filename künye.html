@@ -3,51 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eclip Soul | Künye</title>
+  <title>Eclipsoul | Künye</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Künye sayfası özel stilleri */
+    .kunye-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .kunye-header {
+      text-align: center;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #d4af37;
+      padding-bottom: 30px;
+    }
+
+    .kunye-header h1 {
+      font-size: 48px;
+      letter-spacing: 8px;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .kunye-header p {
+      color: #888;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .kunye-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .kunye-card {
+      background: #0b0f1a;
+      border-left: 3px solid #d4af37;
+      padding: 20px;
+      border-radius: 0 12px 12px 0;
+      transition: transform 0.2s;
+    }
+
+    .kunye-card:hover {
+      transform: translateX(5px);
+    }
+
+    .kunye-card h3 {
+      color: #d4af37;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .kunye-card p {
+      color: #ddd;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .kunye-card .small-note {
+      font-size: 12px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    .quote-area {
+      text-align: center;
+      margin: 50px 0 30px;
+      padding: 30px;
+      background: #0b0f1a;
+      border-radius: 16px;
+      font-style: italic;
+      color: #aaa;
+      border: 1px solid #1a1f2e;
+    }
+
+    .quote-area p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .quote-area .quote-author {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #d4af37;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid #d4af37;
+      text-decoration: none;
+      color: #d4af37;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .back-button a:hover {
+      background: #d4af37;
+      color: #0b0f1a;
+    }
+  </style>
 </head>
 <body>
 
 <nav class="navbar">
-  <div class="logo">ECLIP SOUL</div>
+  <div class="logo">ECLIPSOUL</div>
   <div class="nav-links">
     <a href="index.html">Ana Sayfa</a>
     <a href="subat.html">Şubat</a>
     <a href="mart.html">Mart</a>
-    <a href="nisan.html">Nisan</a>
+    <a href="mayis.html">Mayıs</a>
     <a href="yorumlar.html">Yorumlar</a>
     <a href="künye.html">Künye</a>
   </div>
 </nav>
 
-<div class="container">
-  <h2>✧ KÜNYE ✧</h2>
+<div class="kunye-wrapper">
+  <div class="kunye-header">
+    <h1>✧ KÜNYE ✧</h1>
+    <p>Eclipsoul'un kalbindeki isimler</p>
+  </div>
+
   <div class="kunye-grid">
-    <div class="kunye-category">
-      <h4>Kurucu & Editör</h4>
+    <div class="kunye-card">
+      <h3>🌟 Kurucu & Editör</h3>
       <p>Ebrar</p>
+      <div class="small-note">"Rüyaların peşinden koşan"</div>
     </div>
-    <div class="kunye-category">
-      <h4>Yazarlar</h4>
-      <p>Zehra, Rana, Deniz, Nur, Tuana, Ebrar, Birsen</p>
+
+    <div class="kunye-card">
+      <h3>📝 Yazarlar</h3>
+      <p>Zehra</p>
+      <p>Rana</p>
+      <p>Deniz</p>
+      <p>Tuana</p>
+      <p>Nur</p>
+      <p>Birsen</p>
+      <p>Ebrar</p>
+      <div class="small-note">Her biri kendi evreninden bir parça getiriyor</div>
     </div>
-    <div class="kunye-category">
-      <h4>Çizer</h4>
+
+    <div class="kunye-card">
+      <h3>🎨 Çizer</h3>
       <p>Şule</p>
+      <div class="small-note">Çizgilerin konuştuğu yer</div>
     </div>
-    <div class="kunye-category">
-      <h4>Kapak Tasarım</h4>
+
+    <div class="kunye-card">
+      <h3>📸 Kapak Tasarım</h3>
       <p>Gözde</p>
+      <div class="small-note">Derginin yüzü, ilk izlenim</div>
     </div>
   </div>
-  <div style="text-align: center; margin-top: 2rem;">
-    <a href="index.html" class="btn">← Ana Sayfaya Dön</a>
+
+  <div class="quote-area">
+    <p>"Karanlıkta kalan cümleler için..."</p>
+    <div class="quote-author">— Eclipsoul Ekibi</div>
+  </div>
+
+  <div class="back-button">
+    <a href="index.html">← Ana Sayfaya Dön</a>
   </div>
 </div>
 
 <footer>
-  <p>© 2026 Eclip Soul Dergi — Karanlıkta kalan cümleler için</p>
+  <p>© 2026 Eclipsoul Dergi — Karanlıkta kalan cümleler için</p>
 </footer>
 
 </body>
