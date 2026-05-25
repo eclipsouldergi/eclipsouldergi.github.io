@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Eclipsoul | Mayıs 2026: Perihelion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    .cover {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 30px auto;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    .pdf-container {
+      background: #111522;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 40px 0;
+    }
+    .perihelion-highlight { color: #d4af37; font-weight: bold; }
+    .quote-box {
+      background: #0b0f1a;
+      border-left: 3px solid #d4af37;
+      padding: 20px;
+      margin: 30px 0;
+      font-style: italic;
+      color: #ccc;
+    }
+    .flipbook-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .flipbook-link a {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid #d4af37;
+      text-decoration: none;
+      color: #d4af37;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .flipbook-link a:hover {
+      background: #d4af37;
+      color: #0b0f1a;
+    }
+    .coming-soon {
+      background: #1a1f2e;
+      text-align: center;
+      padding: 40px;
+      border-radius: 12px;
+      color: #d4af37;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>ECLIPSOUL</h1>
+    <div style="margin-bottom: 30px;">
+      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="subat.html">Şubat 2026</a>
+      <a href="mart.html">Mart 2026</a>
+      <a href="mayis.html">Mayıs 2026</a>
+      <a href="yorumlar.html">Yorumlar</a>
+      <a href="künye.html">Künye</a>
+    </div>
+    <div class="sidebar-section">
+      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
+      <a href="mailto:eclipsouldergi98@gmail.com" class="contact-button">📧 Bize Yazın</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <a href="index.html" style="color: #d4af37; text-decoration: none;">← Ana Sayfaya Dön</a>
+
+      <div style="letter-spacing: 3px; font-size: 13px; color: #888; margin: 30px 0 20px;">SAYI III — MAYIS 2026</div>
+      <h1>ECLIPSOUL</h1>
+      <div style="font-style: italic; color: #aaa; margin-bottom: 40px;">Karanlıkta kalan cümleler için</div>
+
+      <!-- KAPAK -->
+      <img src="WhatsApp Image 2026-05-24 at 15.44.38.jpeg" alt="Mayıs 2026: Perihelion" class="cover">
+
+      <!-- MANİFESTO: PERİHELİON -->
+      <div class="manifesto">
+        <h3>PERİHELİON</h3>
+        
+        <p><span class="perihelion-highlight">Perihelion.</span> Bir gök cisminin yörüngede güneşe en yakın olduğu an. 
+        Belki de bu yüzden içinde hem sıcaklık hem de tehlike barındırıyor. 
+        Her an yanabilirsin ancak varlığını sürdürmek de senin elinde.</p>
+        
+        <p>Ve varlığını sürdürmenin yolu gülümsemekten geçer. İçiniz yansa bile gülümsemek zorunda kaldığınız anların inadına gerçekten yüzünüzde küçük de olsa bir tebessüm oluşturmayı hedefledik bu sayımızda.</p>
+        
+        <div class="quote-box">
+          <p style="margin: 0;">"Hayatımız boyunca yeri gelir üzülürüz, yeri gelir ağlarız, yeri gelir aldığımız her nefes yük olur bize."</p>
+        </div>
+        
+        <p>Tüm bu karmaşanın, kaosun, kalabalığın içinde herkesin başa çıkma yolu farklıdır. 
+        Kimi kendini mutfağa atar, kimi dışarı çıkıp bir iki tur atar, kimi kitap okur, kimi resim çizer, kimi yapboz yapar. 
+        Biz <span class="perihelion-highlight">yazı yazıyoruz</span> böyle kaoslu durumlarda.</p>
+        
+        <p>Ve bunları siz okurlarımızla buluşturup ruhunuzdaki ateşe rağmen gülümseyişinizi hayal etmek bize huzur veriyor. 
+        Umarım amacımıza ulaşır ruhunuzu ferahlatabiliriz! <span class="perihelion-highlight">Keyifli okumalar.</span></p>
+        
+        <p style="text-align: right; color: #888; margin-top: 40px; font-size: 14px;">— by deniz</p>
+      </div>
+
+      <!-- PDF (Henüz Yayınlanmadı) -->
+      <div class="pdf-container">
+        <h3 style="color: #d4af37;">📖 Dergiyi Oku (PDF)</h3>
+        <div class="coming-soon">
+          ✨ Mayıs sayımız yakında çıkıyor! ✨<br>
+          PDF dosyası yayınlandığında buradan erişebilirsiniz.
+        </div>
+        <div style="text-align: center; margin-top: 15px;">
+          <span style="color: #888; border: 1px solid #888; padding: 8px 20px; border-radius: 30px; cursor: not-allowed;">⬇ PDF Yakında</span>
+        </div>
+      </div>
+
+      <!-- FLIPBOOK LİNKİ (Henüz Hazır Değil) -->
+      <div class="flipbook-link">
+        <p>📘 Dergiyi dijital flipbook olarak okumak için:</p>
+        <a href="#" style="opacity: 0.6; cursor: not-allowed;" onclick="return false;">Flipbook Yakında →</a>
+        <p style="font-size: 12px; color: #666; margin-top: 8px;">(Mayıs sayısı yayınlandığında link aktif olacaktır)</p>
+      </div>
+
+      <footer style="margin-top: 60px; color: #666; text-align: center;">© Eclip Soul Dergi — Mayıs 2026: Perihelion</footer>
+    </div>
+  </div>
+</body>
+</html>
