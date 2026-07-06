@@ -2,135 +2,125 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Eclipsoul | Mart 2026: Hiraeth</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eclipsoul Dergi Mart 2026 sayısı — Hiraeth. Nostalji, özlem ve hiç var olmamış bir yere duyulan derin özlem.">
+  <title>Eclipsoul | Mart 2026: Hiraeth</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-    .cover {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: 30px auto;
-      border: 1px solid #d4af37;
-      border-radius: 8px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    }
-    .pdf-container {
-      background: #111522;
-      padding: 20px;
-      border-radius: 12px;
-      margin: 40px 0;
-    }
-    .hiraeth-highlight { color: #d4af37; font-weight: bold; }
-    .quote-box {
-      background: #0b0f1a;
-      border-left: 3px solid #d4af37;
-      padding: 20px;
-      margin: 30px 0;
-      font-style: italic;
-      color: #ccc;
-    }
-    .flipbook-link {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .flipbook-link a {
-      display: inline-block;
-      padding: 12px 28px;
-      border: 1px solid #d4af37;
-      text-decoration: none;
-      color: #d4af37;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: all 0.3s;
-    }
-    .flipbook-link a:hover {
-      background: #d4af37;
-      color: #0b0f1a;
-    }
-  </style>
 </head>
 <body>
-  <div class="sidebar">
-    <h1>ECLIPSOUL</h1>
-    <div style="margin-bottom: 30px;">
-      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
+  <div class="stars-bg"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-brand">ECLIPSOUL</a>
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Ana Sayfa</a>
-      <a href="subat.html">Şubat 2026</a>
-      <a href="mart.html">Mart 2026</a>
-      <a href="yorumlar.html">Yorumlar</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-btn" style="color: var(--gold); font-weight: 600;">Sayılar ▾</button>
+        <div class="nav-dropdown-content">
+          <a href="subat.html">Şubat 2026</a>
+          <a href="mart.html" style="color: var(--gold); font-weight: 600;">Mart 2026</a>
+          <a href="nisan.html">Nisan 2026</a>
+          <a href="mayis.html">Mayıs 2026</a>
+        </div>
+      </div>
       <a href="künye.html">Künye</a>
     </div>
-    <div class="sidebar-section">
-      <div style="color: #d4af37; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
-      <a href="mailto:eclipsouldergi98@gmail.com" class="contact-button">📧 Bize Yazın</a>
-    </div>
-  </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-  <div class="content">
-    <div class="container">
-      <a href="index.html" style="color: #d4af37; text-decoration: none;">← Ana Sayfaya Dön</a>
+  <!-- ─── Page Content ─── -->
+  <main class="navbar-page fade-in">
+    <div class="container" style="max-width: 800px;">
 
-      <div style="letter-spacing: 3px; font-size: 13px; color: #888; margin: 30px 0 20px;">SAYI II — MART 2026</div>
-      <h1>ECLIPSOUL</h1>
-      <div style="font-style: italic; color: #aaa; margin-bottom: 40px;">Karanlıkta kalan cümleler için</div>
+      <article class="article-header animate-in">
+        <h1 class="gradient-text">ECLIPSOUL</h1>
+        <p class="subtitle">Karanlıkta kalan cümleler için</p>
+      </article>
 
-      <!-- KAPAK -->
-      <img src="1_20260321_052237_0000.png" alt="Mart 2026: Hiraeth" class="cover">
+      <!-- Cover -->
+      <img src="1_20260321_052237_0000.png" alt="Mart 2026: Hiraeth" class="article-cover">
 
-      <!-- MANİFESTO -->
-      <div class="manifesto">
+      <!-- Manifesto -->
+      <section class="article-manifesto">
         <h3>HIRAETH</h3>
-        
-        <p><span class="hiraeth-highlight">Hiraeth</span>, Galce (Welsh) kökenli bir kelimedir ve tam olarak başka bir dile çevrilmesi oldukça zordur. En basit haliyle; <span class="hiraeth-highlight">"hiç var olmamış ya da artık geri dönülemeyecek olan bir yere duyulan derin özlem"</span> anlamına gelir.</p>
-        
+
+        <p><span class="highlight">Hiraeth</span>, Galce (Welsh) kökenli bir kelimedir ve tam olarak başka bir dile çevrilmesi oldukça zordur. En basit haliyle; <span class="highlight">"hiç var olmamış ya da artık geri dönülemeyecek olan bir yere duyulan derin özlem"</span> anlamına gelir.</p>
+
         <p>Bu kavramı sadece bir "ev özlemi" olarak görmemek gerekir; içinde hüzün, keder ve geçmişe duyulan sarsılmaz bir bağlılık barındırır.</p>
-        
+
         <div class="quote-box">
-          <p style="margin: 0;">"Nostalji geçmişi hatırlamaktır, Hiraeth ise geçmişteki o hisse susayıp oraya asla varamayacağını bilmektir."</p>
+          <p>"Nostalji geçmişi hatırlamaktır, Hiraeth ise geçmişteki o hisse susayıp oraya asla varamayacağını bilmektir."</p>
         </div>
-        
-        <h4 style="color: #d4af37; margin-top: 30px;">Neden Nostalji ile İlişkilendirilir?</h4>
-        
-        <p>Hiraeth ve nostalji aslında aynı ağacın farklı dalları gibidir. Aralarındaki güçlü bağın temel nedenleri şunlardır:</p>
-        
-        <p><span class="hiraeth-highlight">✦ Zamanın Tek Yönlü Oluşu:</span> Nostalji, geçmişteki güzel anlara duyulan bir sevgidir. Hiraeth ise bu anların geçtiğini ve o "zaman dilimine" bir daha asla fiziksel olarak ulaşılamayacağını kabul etmenin verdiği sızıdır.</p>
-        
-        <p><span class="hiraeth-highlight">✦ İdealize Edilmiş Geçmiş:</span> Tıpkı nostaljide olduğu gibi, Hiraeth hissedildiğinde geçmiş olduğundan daha parlak ve huzurlu hatırlanır. Kişi, o anın içindeki zorlukları unutur ve sadece ruhunun "ait olduğunu" hissettiği o soyut duyguya odaklanır.</p>
-        
-        <p><span class="hiraeth-highlight">✦ Kayıp Hissi:</span> Her iki kavram da bir "kayıp" üzerine kuruludur. Nostalji bir anıyı yad ederken, Hiraeth o anının içinde bulunduğu mekanı veya atmosferi (artık orada olmasa bile) geri ister.</p>
-        
-        <h4 style="color: #d4af37; margin-top: 30px;">Hiraeth'i Nostaljiden Ayıran "O" İnce Çizgi</h4>
-        
+
+        <h4>Neden Nostalji ile İlişkilendirilir?</h4>
+
+        <p>Hiraeth and nostalji aslında aynı ağacın farklı dalları gibidir. Aralarındaki güçlü bağın temel nedenleri şunlardır:</p>
+
+        <p><span class="highlight">✦ Zamanın Tek Yönlü Oluşu:</span> Nostalji, geçmişteki güzel anlara duyulan bir sevgidir. Hiraeth ise bu anların geçtiğini ve o "zaman dilimine" bir daha asla fiziksel olarak ulaşılamayacağını kabul etmenin verdiği sızıdır.</p>
+
+        <p><span class="highlight">✦ İdealize Edilmiş Geçmiş:</span> Tıpkı nostaljide olduğu gibi, Hiraeth hissedildiğinde geçmiş olduğundan daha parlak ve huzurlu hatırlanır. Kişi, o anın içindeki zorlukları unutur ve sadece ruhunun "ait olduğunu" hissettiği o soyut duyguya odaklanır.</p>
+
+        <p><span class="highlight">✦ Kayıp Hissi:</span> Her iki kavram da bir "kayıp" üzerine kuruludur. Nostalji bir anıyı yad ederken, Hiraeth o anının içinde bulunduğu mekanı veya atmosferi (artık orada olmasa bile) geri ister.</p>
+
+        <h4>Hiraeth'i Nostaljiden Ayıran "O" İnce Çizgi</h4>
+
         <p>Nostalji bazen mutluluk verici bir hatırlama olabilirken, Hiraeth içinde her zaman bir miktar trajedi barındırır. Hiç gitmediğiniz bir yerin özlemini çekmek veya çocukluğunuzun geçtiği ama artık bambaşka bir yer olan mahalleniz için hissettiğiniz o "yabancılaşma" duygusu tam olarak budur.</p>
-        
+
         <div class="quote-box">
-          <p style="margin: 0;">Kısaca: Nostalji geçmişi hatırlamaktır, Hiraeth ise geçmişteki o hisse susayıp oraya asla varamayacağını bilmektir.</p>
-    
+          <p>"Kısaca: Nostalji geçmişi hatırlamaktır, Hiraeth ise geçmişteki o hisse susayıp oraya asla varamayacağını bilmektir."</p>
         </div>
-        
-       <p style="margin-top: 30px;">Mart sayımız; kaybettiğimiz zamanların, geri gelmeyecek anların ve belki de hiç yaşanmamış anıların sayısıdır. <span class="hiraeth-highlight">Hiraeth</span> ile...</p>
-        <p style="text-align: right; color: #888; margin-top: 30px; font-size: 14px;">— by deniz </p>
-      </div>
 
-      <!-- PDF -->
-      <div class="pdf-container">
-        <h3 style="color: #d4af37;">📖 Dergiyi Oku (PDF)</h3>
-        <iframe src="Eclipsoul 2. Sayı_20260321_211420_0000-compressed.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;"></iframe>
-        <div style="text-align: center; margin-top: 15px;">
-          <a href="Eclipsoul 2. Sayı_20260321_211420_0000-compressed.pdf" download style="color: #d4af37; border: 1px solid #d4af37; padding: 8px 20px; text-decoration: none; border-radius: 30px;">⬇ PDF İndir</a>
+        <p>Mart sayımız; kaybettiğimiz zamanlerin, geri gelmeyecek anların ve belki de hiç yaşanmamış anıların sayısıdır. <span class="highlight">Hiraeth</span> ile...</p>
+
+        <p class="author">— by deniz</p>
+      </section>
+
+      <!-- PDF Section -->
+      <section class="pdf-section">
+        <h3>📖 Dergiyi Oku (PDF)</h3>
+        <iframe src="Eclipsoul 2. Sayı_20260321_211420_0000-compressed.pdf" title="Eclipsoul Mart 2026 PDF"></iframe>
+        <div class="pdf-actions">
+          <a href="Eclipsoul 2. Sayı_20260321_211420_0000-compressed.pdf" download class="btn-outline">⬇ PDF İndir</a>
+          <a href="https://heyzine.com/flip-book/14b535d079.html" target="_blank" rel="noopener noreferrer" class="btn-outline">📘 Flipbook'u Aç →</a>
         </div>
-      </div>
+      </section>
 
-      <!-- FLIPBOOK LİNKİ -->
-      <div class="flipbook-link">
-        <p>📘 Dergiyi dijital flipbook olarak okumak için:</p>
-        <a href="https://heyzine.com/flip-book/14b535d079.html" target="_blank">Flipbook'u Aç →</a>
-      </div>
-
-      <footer style="margin-top: 60px; color: #666; text-align: center;">© Eclip Soul Dergi — Mart 2026: Hiraeth</footer>
+      <footer>
+        <p>© Eclipsoul Dergi — Mart 2026: Hiraeth</p>
+      </footer>
     </div>
-  </div>
+  </main>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Parallax stars
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 2;
+      const y = (e.clientY / window.innerHeight - 0.5) * 2;
+      document.documentElement.style.setProperty('--mouseX', x);
+      document.documentElement.style.setProperty('--mouseY', y);
+    });
+  </script>
 </body>
 </html>

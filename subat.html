@@ -2,89 +2,108 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Eclipsoul | Şubat 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eclipsoul Dergi Şubat 2026 sayısı — Deliquium. Ruhun eridiği anlar, mitoloji ve iç monologlar.">
+  <title>Eclipsoul | Şubat 2026: Deliquium</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-    .issue { letter-spacing: 3px; font-size: 13px; color: #888; margin-bottom: 20px; }
-    .subtitle { font-style: italic; color: #aaa; margin-bottom: 40px; }
-    .cover { width: 100%; max-width: 500px; display: block; margin: 30px auto; border: 1px solid #333; }
-    .article { font-size: 17px; line-height: 1.8; margin: 40px 0; }
-    .article p { margin-bottom: 20px; }
-    .pdf-container { background: #111522; padding: 20px; border-radius: 8px; margin: 40px 0; }
-    .back-link { color: var(--altin); text-decoration: none; margin-bottom: 20px; display: inline-block; }
-    footer { margin-top: 60px; color: #666; text-align: center; }
-  </style>
 </head>
 <body>
-  <div class="sidebar">
-    <h1>ECLIPSOUL</h1>
-    <div style="margin-bottom: 30px;">
-      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">MENÜ</div>
+  <div class="stars-bg"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-brand">ECLIPSOUL</a>
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Ana Sayfa</a>
-      <a href="subat.html">Şubat 2026</a>
-      <a href="mart.html">Mart 2026</a>
-      <a href="yorumlar.html">Yorumlar</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-btn" style="color: var(--gold); font-weight: 600;">Sayılar ▾</button>
+        <div class="nav-dropdown-content">
+          <a href="subat.html" style="color: var(--gold); font-weight: 600;">Şubat 2026</a>
+          <a href="mart.html">Mart 2026</a>
+          <a href="nisan.html">Nisan 2026</a>
+          <a href="mayis.html">Mayıs 2026</a>
+        </div>
+      </div>
       <a href="künye.html">Künye</a>
     </div>
-    <div class="sidebar-section">
-      <div style="color: var(--altin); font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">İLETİŞİM</div>
-      <a href="mailto:eclipsouldergi98@gmail.com" class="contact-button">📧 Bize Yazın</a>
-    </div>
-  </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-  <div class="content">
-    <div class="container">
-      <a href="index.html" class="back-link">← Ana Sayfaya Dön</a>
+  <!-- ─── Page Content ─── -->
+  <main class="navbar-page fade-in">
+    <div class="container" style="max-width: 800px;">
 
-      <div class="issue">SAYI I — ŞUBAT 2026</div>
-      <h1>ECLIPSOUL</h1>
-      <div class="subtitle">Karanlıkta kalan cümleler için</div>
+      <article class="article-header animate-in">
+        <h1 class="gradient-text">ECLIPSOUL</h1>
+        <p class="subtitle">Karanlıkta kalan cümleler için</p>
+      </article>
 
-      <!-- MANİFESTO -->
-      <div class="manifesto">
+      <!-- Cover Image -->
+      <img src="IMG_20260210_222112.jpg" alt="Şubat 2026: Deliquium" class="article-cover">
+
+      <!-- Manifesto -->
+      <section class="article-manifesto">
         <h3>DELIQUIUM</h3>
-        <p>Deliquium, Latince kökenli bir kavramdır. Sözlük anlamıyla "erime, çözülme, dağılma" demektir. Ancak derinine inersek, Deliquium ruhsal ve zihinsel bir kırılmayı ifade eder. Yeryüzünün kırıldığı anlar da tutulma anlarıdır.</p>
+        <p>Deliquium, Latince kökenli bir kavramdır. Sözlük anlamıyla "erime, çözülme, dağılma" demektir. Ancak derinine inersek, <span class="highlight">Deliquium ruhsal ve zihinsel bir kırılmayı ifade eder.</span> Yeryüzünün kırıldığı anlar da tutulma anlarıdır.</p>
         <p>Bu sayımızda insanın taşma noktasına ve söyleyemedikleriyle baş başa kaldığı yerlere odaklanıyoruz.</p>
-      </div>
-      
-  
-  <!-- Alt Bilgi -->
-  <div style="margin-top: 30px; text-align: center; border-top: 1px solid #333; padding-top: 20px;">
-    <p style="color: #d4af37; font-style: italic; font-size: 14px;">"Her insanın içinde görünmeyen sessiz bir çatlak vardır."</p>
-  </div>
-  
-</div>
-        
-        <div style="margin-top: 15px; text-align: right;">
-          <span style="background: #d4af37; color: #0b0f1a; padding: 3px 10px; border-radius: 20px; font-size: 12px;">29 Sayfa</span>
+
+        <div class="quote-box">
+          <p>"Her insanın içinde görünmeyen sessiz bir çatlak vardır."</p>
         </div>
-      </div>
 
-      <img src="IMG_20260210_222112.jpg" class="cover">
-
-      <div class="article">
         <p>Bu sayı; bazen susarak büyüyenlerin, vazgeçtiğini sanıp aslında içinde saklayanların sayısıdır.</p>
         <p>Şubat sayımız; kırılganlığı bir zayıflık değil, bir başlangıç olarak görenler için.</p>
-      </div>
+      </section>
 
-      <!-- PDF -->
-      <div class="pdf-container">
-        <h3 style="color: #d4af37; margin-top: 0;">📖 Dergiyi Oku</h3>
-        <iframe src="dergi_20260218_083953_0000-compressed.pdf" width="100%" height="600px" style="border: none;"></iframe>
-        <div style="text-align: center; margin-top: 15px;">
-          <a href="dergi_20260218_083953_0000-compressed.pdf" download style="color: #d4af37; border: 1px solid #d4af37; padding: 8px 20px; text-decoration: none; border-radius: 30px;">⬇ PDF İndir</a>
+      <!-- PDF Section -->
+      <section class="pdf-section">
+        <h3>📖 Dergiyi Oku</h3>
+        <iframe src="dergi_20260218_083953_0000-compressed.pdf" title="Eclipsoul Şubat 2026 PDF"></iframe>
+        <div class="pdf-actions">
+          <a href="dergi_20260218_083953_0000-compressed.pdf" download class="btn-outline">⬇ PDF İndir</a>
+          <a href="https://heyzine.com/flip-book/56fdf0dd36.html/" target="_blank" rel="noopener noreferrer" class="btn-outline">📖 Flipbook'u Aç</a>
+          <span class="btn-outline" style="cursor: default;">29 Sayfa</span>
         </div>
-      </div>
+      </section>
 
-      <div class="flipbook-link">
-        <p>Flipbook versiyonu:</p>
-        <a href="https://heyzine.com/flip-book/56fdf0dd36.html/" target="_blank">Flipbook'u Aç</a>
-      </div>
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p>© Eclipsoul Dergi — Şubat 2026: Deliquium</p>
+      </footer>
 
-      <footer>© Eclip Soul Dergi — Şubat 2026</footer>
     </div>
-  </div>
+  </main>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Parallax stars
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 2;
+      const y = (e.clientY / window.innerHeight - 0.5) * 2;
+      document.documentElement.style.setProperty('--mouseX', x);
+      document.documentElement.style.setProperty('--mouseY', y);
+    });
+  </script>
+
 </body>
 </html>
