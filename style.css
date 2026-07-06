@@ -205,8 +205,9 @@ img {
 .navbar {
   position: fixed;
   top: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 90%;
   max-width: 900px;
   height: var(--navbar-h);
@@ -772,6 +773,7 @@ img {
 }
 
 .article-cover {
+  width: 100%;
   max-width: 550px;
   margin: 2rem auto 3rem;
   border-radius: var(--radius-lg);
@@ -1515,6 +1517,21 @@ img {
   .page-content {
     margin-left: 0;
     padding: 4.5rem 1.5rem 2rem;
+  }
+
+  .kunye-page,
+  .navbar-page {
+    padding: calc(var(--navbar-h) + 1.5rem) 1.25rem 3rem;
+  }
+
+  .article-manifesto {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .article-manifesto .quote-box {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
   }
 
   /* Hero */
